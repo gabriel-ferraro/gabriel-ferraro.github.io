@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 36x;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+/* navbar */
+.navbar__list {
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    padding: 16px;
+    font-size: 2rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.navbar__list>ul {
+    opacity: 100%;
+}
+
+.navbar__link {
+    color: black;
+}
+
+.navbar__item {
+    padding-right: 30px;
+}
+
+.navbar__item img {
+    border-radius: 50px;
+}
+
+.navbar__item-right {
+    display: flex;
+    margin-left: auto;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltip__text {
+    white-space: nowrap;
+    visibility: hidden;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    right: 105%;
+    color: white;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: gray;
+    font-size: 1rem;
+}
+
+.tooltip:hover .tooltip__text {
+    visibility: visible;
+}
+
+.navbar__item img {
+    height: 36px;
+    width: 65px;
+}
+
+/* about me */
+header+section {
+    margin-top: 80px;
+}
+
+/* education */
+.education {
+    display: flex;
+}
+
+.positivo-logo {
+    height: 90px;
+    width: 280px;
+}
+
+/* github */
+.github__title {
+    color: white;
+}
+
+.github {
+    background-color: #5F6366;
+}
+
+.github__repos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1920px;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 30px 20px;
+}
+
+.repo__card {
+    background-color: white;
+    border-radius: 8px;
+}
+
+.repo__card>div {
+    padding: 20px;
+}
+
+/* learning */
+
+/* CV */
+.curriculum__download {
+    visibility: hidden;
+}
+
+.curriculum__download__anchor {
+    display: flex;
+    justify-content: center;
+}
+
+.curriculum__download__icon {
+    font-size: 46px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* footer */
+.footer {
+    font-size: 36px;
+    background: #4D6D9A;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer__email {
+    color: white;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contact-list__item {
+    padding: 0 20px;
+}
+
+.github-icon {
+    color: #00ffff;
+}
+
+/* return */
+.return-top {
+    font-size: 66px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+
+}
+
+.return-top a {
+    color: black;
+}

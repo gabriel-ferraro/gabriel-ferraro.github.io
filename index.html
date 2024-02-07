@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Severino portfolio</title>
+    <!-- my icon -->
+    <link rel="icon" href="resources/my-icon.png" type="image/x-icon">
+    <!-- my css -->
+    <link href="style.css" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- pdf.js lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"
+        integrity="sha512-Z8CqofpIcnJN80feS2uccz+pXWgZzeKxDsDNMD/dJ6997/LSRY+W4NmEt9acwR+Gt9OHN0kkI1CTianCwoqcjQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js"
+        integrity="sha512-lHibs5XrZL9hXP3Dhr/d2xJgPy91f2mhVAasrSbMkbmoTSm2Kz8DuSWszBLUg31v+BM6tSiHSqT72xwjaNvl0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- my script -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">Gabriel Ferraro Severino</a>
+                </li>
+                <div class="navbar__item-right">
+                    <li class="navbar__item">
+                        <a href="#footer" class="navbar__link conctact-me">Contact me</a>
+                    </li>
+                    <li id="english-mode" onclick="changeLang('en')" class="navbar__item tooltip">
+                        <img class="uk-flag" src="./resources/uk-flag.png" alt="Flag of the United Kindom">
+                        <span class="tooltip__text">Change to english</span>
+                    </li>
+                    <li id="pt-BR-mode" onclick="changeLang('pt-BR')" class="navbar__item tooltip">
+                        <img class="br-flag" src="./resources/brazil-flag.png" alt="Flag of Brazil">
+                        <span class="tooltip__text">Mudar para pt-BR</span>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- about me -->
+    <section class="about">
+        <h1 class="about__presentation">Hi, <b>i'm Gabriel Ferraro Severino</b></h1>
+        <p class="about__text">a fullstack developer, software engineer and continuous learner. Currently through
+            new discoveries, I aim to develop smart and efficient solutions. Want to know a little more about me?
+            check my <a class="contact-link" href="https://www.linkedin.com/in/gabriel-severino/">LinkedIn</a> and
+            contact me.
+        </p>
+    </section>
+
+    <!-- education -->
+    <section class="education">
+        <h1 class="education__title">Education</h1>
+        <div class="education__item">
+            <h2 class="education__uni">Positivo University</h2>
+            <img class="positivo-logo" src="./resources/universidade-positivo-logo.png" alt="Positivo University logo">
+        </div>
+        <p class="education__about">Software Engineer bachelor's degree - (2020-2023)</p>
+    </section>
+
+    <!-- projects -->
+    <section class="projects">
+
+    </section>
+
+    <!-- github -->
+    <section class="github">
+        <h1 class="github__title">My Github repositories</h1>
+        <!-- <div onclick="getGithubRepos()" class="github__repos"> -->
+        <div class="github__repos">
+            <div class="repo__card">
+                <h3 class="repo__card__title">Nome rep aqui</h3>
+                <p class="repo__card__about">See at <a href="/" target="_blank">Github</a></p>
+                <div class="repo__card__readme">readme aqui</div>
+                <p class="repo__card__clone">Clone this repository</p><button><i class="fa-solid fa-clipboard-list"></i></button>
+            </div>
+            <div class="repo__card">
+                <h3 class="repo__card__title">Nome rep aqui</h3>
+                <p class="repo__card__about">See at <a href="/" target="_blank">Github</a></p>
+                <div class="repo__card__readme">readme aqui</div>
+                <p class="repo__card__clone">Clone this repository</p><button><i class="fa-solid fa-clipboard-list"></i></button>
+            </div>
+            <div class="repo__card">
+                <h3 class="repo__card__title">Nome rep aqui</h3>
+                <p class="repo__card__about">See at <a href="/" target="_blank">Github</a></p>
+                <div class="repo__card__readme">readme aqui</div>
+                <p class="repo__card__clone">Clone this repository</p><button><i class="fa-solid fa-clipboard-list"></i></button>
+            </div>
+            <div class="repo__card">
+                <h3 class="repo__card__title">Nome rep aqui</h3>
+                <p class="repo__card__about">See at <a href="/" target="_blank">Github</a></p>
+                <div class="repo__card__readme">readme aqui</div>
+                <p class="repo__card__clone">Clone this repository</p><button><i class="fa-solid fa-clipboard-list"></i></button>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!-- what i'm learning -->
+    <section class="learning">
+        <h1 class="learning__title">What i'm currently learning?</h1>
+
+        <div class="learning__cards">
+
+        </div>
+    </section>
+
+    <!-- my CV -->
+    <section class="curriculum">
+        <h1 class="curriculum__title">See my Curriculum Vitæ</h1>
+        <!-- cv lang selector -->
+        <label for="curriculum-lang" class="curriculum__select-label">Select CV language</label>
+        <select id="curriculum-lang" onchange="loadCV()" class="curriculum__lang-select">
+            <option class="select-cv-lang" value="">Select a language</option>
+            <option value="en">English</option>
+            <option value="pt-BR">Português do Brasil</option>
+        </select>
+        <!-- download cv -->
+        <span class="curriculum__download" id="download-cv">
+            <a download class="curriculum__download__anchor" id="download-cv-anchor">
+                <p>Download CV</p>
+                <i class="fa-solid fa-download curriculum__download__icon"></i>
+            </a>
+        </span>
+        <!-- canvas for templating CV -->
+        <div id="canvas_container">
+            <canvas id="pdf_renderer"></canvas>
+        </div>
+    </section>
+
+    <div class="return-top tooltip">
+        <a href="#">
+            <i class="fas fa-chevron-circle-up"></i>
+            <span class="tooltip__text return-top__message">Return to top</span>
+        </a>
+    </div>
+
+    <footer class="footer">
+        <a href="mailto:gabrielferraro00@gmail.com" class="footer__email">gabrielferraro00@gmail.com</a>
+        <ul class="contact-list">
+            <li class="contact-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/gabriel-severino/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li class="contact-list__item">
+                <a class="social-list__link" href="https://github.com/gabriel-ferraro/" target="_blank"><i
+                        class="fa-brands fa-github github-icon"></i></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
