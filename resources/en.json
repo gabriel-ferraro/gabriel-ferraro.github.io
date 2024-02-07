@@ -1,7 +1,7 @@
 {
     ".conctact-me": "Contact me",
     ".about__presentation": "Hi, <b>i'm Gabriel Ferraro Severino</b>",
-    ".about__text": "a fullstack developer, software engineer and continuous learner. Currently through new discoveries, I aim to develop smart and efficient solutions. Want to know a little more about me? check my <a class='contact-link' href='https://www.linkedin.com/in/gabriel-severino/'>LinkedIn</a> and contact me.",
+    ".about__text": "a fullstack developer, software engineer and continuous learner. Currently through new discoveries, I aim to develop smart and efficient solutions. Want to know a little more about me? check my <a class='contact-link' href='https://www.linkedin.com/in/gabriel-severino/' target='_blank'>LinkedIn</a> and contact me.",
     ".education__title": "Education",
     ".education__uni": "Positivo University",
     ".education__about": "Software Engineer bachelor's degree - (2020-2023)",

@@ -1,7 +1,7 @@
 {
     ".conctact-me": "Sobre",
     ".about__presentation": "Olá, meu nome é <b>Gabriel Ferraro Severino</b>",
-    ".about__text": "Sou desenvolvedor fullstack, engenheiro de software e estou constantemente estudando. Atualmente em processo de novas descobertas, eu quero desenvolver soluções inteligentes e eficientes. Quer saber um pouco mais sobre mim? olhe meu <a class='contact-link' href='https: //www.linkedin.com/in/gabriel-severino/'>LinkedIn</a> e entre em contato.",
+    ".about__text": "Sou desenvolvedor fullstack, engenheiro de software e estou constantemente estudando. Atualmente em processo de novas descobertas, eu quero desenvolver soluções inteligentes e eficientes. Quer saber um pouco mais sobre mim? olhe meu <a class='contact-link' href='https://www.linkedin.com/in/gabriel-severino/' target='_blank'>LinkedIn</a> e entre em contato.",
     ".education__title": "Formação",
     ".education__uni": "Universidade Positivo",
     ".education__about": "Bacharelado em engenharia de software - (2020-2023)",
