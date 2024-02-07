@@ -29,11 +29,11 @@
         <nav class="navbar">
             <ul class="navbar__list">
                 <li class="navbar__item">
-                    <a href="#" class="navbar__link">Gabriel Ferraro Severino</a>
+                    <a href="#" class="navbar__link normal__link">Gabriel Ferraro Severino</a>
                 </li>
                 <div class="navbar__item-right">
                     <li class="navbar__item">
-                        <a href="#footer" class="navbar__link conctact-me">Contact me</a>
+                        <a href="#footer" id="conctact-me" class="navbar__link normal__link">Contact me</a>
                     </li>
                     <li id="english-mode" onclick="changeLang('en')" class="navbar__item tooltip">
                         <img class="uk-flag" src="./resources/uk-flag.png" alt="Flag of the United Kindom">
@@ -52,23 +52,28 @@
     <section class="about">
         <img class="about__icon" src="./resources/my-icon.png" alt="My github icon">
         <div class="about__info">
-            <h1 class="about__presentation">Hi, <b>i'm Gabriel Ferraro Severino</b></h1>
-            <p class="about__text">a fullstack developer, software engineer and continuous learner. Currently through
-                new discoveries, I aim to develop smart and efficient solutions. Want to know a little more about me?
-                check my <a class="contact-link" href="https://www.linkedin.com/in/gabriel-severino/">LinkedIn</a> and
-                contact me.
+            <h1 id="about-presentation" class="about__presentation space-bottom">Hi, <b>i'm Gabriel Ferraro Severino</b>
+            </h1>
+            <p id="about-text" class="about__text main__link">
+                a fullstack developer, software engineer and continuous learner. Currently through new discoveries, I aim to develop smart and efficient solutions.
+                Want to know a little more about me? check my <a class="contact-link" href="https://www.linkedin.com/in/gabriel-severino/">LinkedIn</a> and contact me.
             </p>
         </div>
     </section>
 
     <!-- education -->
-    <section class="education">
-        <h1 class="education__title">Education</h1>
-        <div class="education__item">
-            <h2 class="education__uni">Positivo University</h2>
-            <img class="positivo-logo" src="./resources/universidade-positivo-logo.png" alt="Positivo University logo">
+    <section class="education space-bottom space-top space-left">
+        <h1 id="education-title" class="education__title space-bottom">Education</h1>
+        <div class="education__item space-left">
+            <div class="education__item__div">
+                <h2 id="positivo-name" class="education__item__title space-bottom">Positivo University</h2>
+                <img class="education__item__img" src="./resources/universidade-positivo-logo.png" alt="Positivo University logo">
+            </div>
+            <div class="education__item__about">
+                <h3 id="es-title" class="item__about">Software Engineer bachelor's degree - (2020-2023)</h3>
+                <p id="es-text"></p>
+            </div>
         </div>
-        <p class="education__about">Software Engineer bachelor's degree - (2020-2023)</p>
     </section>
 
     <!-- projects -->
@@ -76,26 +81,23 @@
 
     </section>
 
-    <!-- github -->
-    <section class="github">
-        <h1 class="github__title">My Github repositories</h1>
-        <!-- <div onclick="getGithubRepos()" class="github__repos"> -->
+    <!-- github: to-do fetching from api and show my main repositories. -->
+    <section style="display: none" class="github">
+        <h1 id="github-title" class="github__title">My Github repositories</h1>
         <div class="github__repos">
             <div class="repo__card">
                 <h3 class="repo__card__title">Nome rep aqui</h3>
                 <p class="repo__card__about">See at <a href="/" target="_blank">Github</a></p>
                 <div class="repo__card__readme">readme aqui</div>
-                <p class="repo__card__clone">Clone this repository</p><button><i
-                        class="fa-solid fa-clipboard-list"></i></button>
+                <p class="repo__card__clone">Clone this repository</p>
+                <button><i class="fa-solid fa-clipboard-list"></i></button>
             </div>
         </div>
-
     </section>
 
     <!-- what i'm learning -->
     <section class="learning">
-        <h1 class="learning__title">What i'm currently learning?</h1>
-
+        <h1 id="currently-learning" class="learning__title">What i'm currently learning?</h1>
         <div class="learning__cards">
 
         </div>
@@ -103,11 +105,11 @@
 
     <!-- my CV -->
     <section class="curriculum">
-        <h1 class="curriculum__title">See my Curriculum Vitæ</h1>
+        <h1 id="curriculum-title" class="curriculum__title">See my Curriculum Vitæ</h1>
         <!-- cv lang selector -->
-        <label for="curriculum-lang" class="curriculum__select-label">Select CV language</label>
-        <select id="curriculum-lang" onchange="loadCV()" class="curriculum__lang-select">
-            <option class="select-cv-lang" value="">Select a language</option>
+        <label id="curriculum-lang-label" for="curriculum-lang" class="curriculum__select-label">Select CV language</label>
+        <select onchange="loadCV()" class="curriculum__lang-select">
+            <option id="curriculum-lang-selector" class="select-cv-lang" value="">Select a language</option>
             <option value="en">English</option>
             <option value="pt-BR">Português do Brasil</option>
         </select>
@@ -125,9 +127,9 @@
     </section>
 
     <div class="return-top tooltip">
-        <a href="#">
+        <a class="normal__link" href="#">
             <i class="fas fa-chevron-circle-up"></i>
-            <span class="tooltip__text return-top__message">Return to top</span>
+            <span id="return-top" class="tooltip__text return-top__message">Return to top</span>
         </a>
     </div>
 

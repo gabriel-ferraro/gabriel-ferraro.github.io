@@ -1,14 +1,15 @@
 {
-    ".conctact-me": "Contact me",
-    ".about__presentation": "Hi, <b>i'm Gabriel Ferraro Severino</b>",
-    ".about__text": "a fullstack developer, software engineer and continuous learner. Currently through new discoveries, I aim to develop smart and efficient solutions. Want to know a little more about me? check my <a class='contact-link' href='https://www.linkedin.com/in/gabriel-severino/' target='_blank'>LinkedIn</a> and contact me.",
-    ".education__title": "Education",
-    ".education__uni": "Positivo University",
-    ".education__about": "Software Engineer bachelor's degree - (2020-2023)",
-    ".github__title": "My Github repositories",
-    ".learning__title": "What i'm currently learning?",
-    ".curriculum__title": "See my Curriculum Vitæ",
-    ".select-cv-lang": "Select a language",
-    ".curriculum__select-label": "Select CV language",
-    ".return-top__message": "Return to top"
+    "#conctact-me": "Contact me",
+    "#about-presentation": "Hi, <b>i'm Gabriel Ferraro Severino</b>",
+    "#about-text": "A fullstack developer, software engineer and continuous learner. Currently through new discoveries, I aim to develop smart and efficient solutions. Want to know a little more about me? check my <a class='contact-link' href='https://www.linkedin.com/in/gabriel-severino/' target='_blank'>LinkedIn</a> and contact me.",
+    "#education-title": "Education",
+    "#positivo-name": "Positivo University",
+    "#es-title": "Software Engineer bachelor's degree - (2020-2023)",
+    "#es-text": "",
+    "#github-title": "My Github repositories",
+    "#currently-learning": "What i'm currently learning?",
+    "#curriculum-title": "See my Curriculum Vitæ",
+    "#curriculum-lang-label": "Select a language",
+    "#curriculum-lang-selector": "Select CV language",
+    "#return-top": "Return to top"
 }

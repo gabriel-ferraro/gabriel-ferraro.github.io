@@ -1,14 +1,15 @@
 {
-    ".conctact-me": "Sobre",
-    ".about__presentation": "Olá, meu nome é <b>Gabriel Ferraro Severino</b>",
-    ".about__text": "Sou desenvolvedor fullstack, engenheiro de software e estou constantemente estudando. Atualmente em processo de novas descobertas, eu quero desenvolver soluções inteligentes e eficientes. Quer saber um pouco mais sobre mim? olhe meu <a class='contact-link' href='https://www.linkedin.com/in/gabriel-severino/' target='_blank'>LinkedIn</a> e entre em contato.",
-    ".education__title": "Formação",
-    ".education__uni": "Universidade Positivo",
-    ".education__about": "Bacharelado em engenharia de software - (2020-2023)",
-    ".github__title": "Meus repositórios no github",
-    ".learning__title": "O que estou aprendendo agora?",
-    ".curriculum__title": "Veja meu Curriculum Vitæ",
-    ".select-cv-lang": "Selecione um idioma",
-    ".curriculum__select-label": "Selecione o idioma do CV",
-    ".return-top__message": "Voltar para o topo"
+    "#conctact-me": "Sobre",
+    "#about-presentation": "Olá, meu nome é <b>Gabriel Ferraro Severino</b>",
+    "#about-text": "Sou desenvolvedor fullstack, engenheiro de software e estou constantemente estudando. Atualmente em processo de novas descobertas, eu quero desenvolver soluções inteligentes e eficientes. Quer saber um pouco mais sobre mim? olhe meu <a class='contact-link' href='https://www.linkedin.com/in/gabriel-severino/' target='_blank'>LinkedIn</a> e entre em contato.",
+    "#education-title": "Formação",
+    "#positivo-name": "Universidade Positivo",
+    "#es-title": "Bacharelado em engenharia de software - (2020-2023)",
+    "#es-text": "",
+    "#github-title": "Meus repositórios no github",
+    "#currently-learning": "O que estou aprendendo agora?",
+    "#curriculum-title": "Veja meu Curriculum Vitæ",
+    "#curriculum-lang-label": "Selecione um idioma",
+    "#curriculum-lang-selector": "Selecione o idioma do CV",
+    "#return-top": "Voltar para o topo"
 }

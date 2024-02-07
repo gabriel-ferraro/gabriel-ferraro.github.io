@@ -14,15 +14,39 @@ ul {
 }
 
 h1 {
-    font-size: 36x;
+    font-size: 46px;
 }
 
 h2 {
-    font-size: 26px;
+    font-size: 36px;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 26px;
+}
+
+.space-bottom {
+    padding-bottom: 20px;
+}
+
+.space-top {
+    padding-top: 100px;
+}
+
+.space-left {
+    margin-left: 50px;
+}
+
+.normal__link {
+    color: black;
+}
+
+.main__link a {
+    color: #00dddd;
+}
+
+.main__link a:hover {
+    color: #00ffff;
 }
 
 /* navbar */
@@ -34,14 +58,6 @@ h3 {
     width: 100%;
     position: fixed;
     top: 0;
-}
-
-.navbar__list>ul {
-    opacity: 100%;
-}
-
-.navbar__link {
-    color: black;
 }
 
 .navbar__item {
@@ -97,21 +113,9 @@ header+.about {
     margin: 0 auto;
 }
 
-.about__presentation {
-    padding-bottom: 20px;
-    font-size: 40px;
-}
-
 .about__text {
-    font-size: 26px;
-}
-
-.about__text a {
-    color: #00dddd;
-}
-
-.about__text a:hover {
-    color: #00ffff;
+    font-size: 2rem;
+    text-align: justify;
 }
 
 .about__icon {
@@ -121,13 +125,36 @@ header+.about {
 }
 
 /* education */
-.education {
-    display: flex;
+.education__title {
+    font-size: 2rem;
 }
 
-.positivo-logo {
+.education__item {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.education__item__about {
+    margin-left: 40px;
+}
+
+.education__item__img {
     height: 90px;
     width: 280px;
+}
+
+/* learning */
+.learning {
+    background-color: #5F6366;
+    color: white;
+}
+
+.learning__cards {
+
 }
 
 /* github */
@@ -160,8 +187,6 @@ header+.about {
     padding: 20px;
 }
 
-/* learning */
-
 /* CV */
 .curriculum__download {
     visibility: hidden;
@@ -173,15 +198,16 @@ header+.about {
 }
 
 .curriculum__download__icon {
-    font-size: 46px;
+    font-size: 3.5rem;
     cursor: pointer;
     border: 1px solid black;
     border-radius: 10px;
+    color: black;
 }
 
 /* footer */
 .footer {
-    font-size: 36px;
+    font-size: 3rem;
     background: #4D6D9A;
     color: white;
     text-align: center;
@@ -214,8 +240,4 @@ header+.about {
     bottom: 0;
     padding: 20px;
 
-}
-
-.return-top a {
-    color: black;
 }
