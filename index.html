@@ -52,8 +52,7 @@
     <section class="about">
         <img class="about__icon" src="./resources/my-icon.png" alt="My github icon">
         <div class="about__info">
-            <h1 id="about-presentation" class="about__presentation space-bottom">Hi, <b>i'm Gabriel Ferraro Severino</b>
-            </h1>
+            <h1 id="about-presentation" class="about__presentation space-bottom">Hi, <b>i'm Gabriel Ferraro Severino</b></h1>
             <p id="about-text" class="about__text main__link">
                 a fullstack developer, software engineer and continuous learner. Currently through new discoveries, I aim to develop smart and efficient solutions.
                 Want to know a little more about me? check my <a class="contact-link" href="https://www.linkedin.com/in/gabriel-severino/">LinkedIn</a> and contact me.
@@ -96,28 +95,57 @@
     </section>
 
     <!-- what i'm learning -->
-    <section class="learning">
-        <h1 id="currently-learning" class="learning__title">What i'm currently learning?</h1>
+    <section class="learning space-top space-bottom">
+        <h1 id="currently-learning" class="learning__title space-left">What i'm currently learning?</h1>
         <div class="learning__cards">
-
+            <div class="learning__card">
+                <h4 class="space-bottom">Linux system administration</h1>
+                <div class="learning__card__content">
+                    <img src="./resources/linux-mascot.png" alt="The linux mascot">
+                    <p class="space-left">
+                        Understanding and managing unix-based systems is a very important skill for a software developer. 
+                        When servers, cellphones and embedded systems need a secure and constantly updated kernel, the best one to choose is Linux.
+                    </p>
+                </div>
+            </div>
+            <div class="learning__card">
+                <h4 class="space-bottom">React</h1>
+                <div class="learning__card__content">
+                    <img src="./resources/react-logo.png" alt="React.JS logo">
+                    <p class="space-left">
+                        In order to maintain reactive web applications with state changes, multiple components and complex hierarchy, a Javascript framework or library is needed to make things
+                        simpler. React is open-source and maintaned by facebook, being a light-weight library prefered by many companies and developers.
+                    </p>
+                </div>
+            </div>
+            <div class="learning__card">
+                <h4 class="space-bottom">TypeScript</h1>
+                <div class="learning__card__content">
+                    <img src="./resources/typescript-logo.png" alt="Typescript logo">
+                    <p class="space-left">
+                        Guaranteeing type-safety to a Javascript based project might be important, since it's easier to track down bugs, offereing concise code and less room for
+                        misinterpretation to other developers.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- my CV -->
-    <section class="curriculum">
-        <h1 id="curriculum-title" class="curriculum__title">See my Curriculum Vitæ</h1>
+    <section class="curriculum space-left space-bottom">
+        <h1 id="curriculum-title" class="curriculum__title space-bottom">See my Curriculum Vitæ</h1>
         <!-- cv lang selector -->
         <label id="curriculum-lang-label" for="curriculum-lang" class="curriculum__select-label">Select CV language</label>
-        <select onchange="loadCV()" class="curriculum__lang-select">
+        <select onchange="loadCV()" id="cv-lang-select" class="curriculum__lang-select space-left">
             <option id="curriculum-lang-selector" class="select-cv-lang" value="">Select a language</option>
             <option value="en">English</option>
             <option value="pt-BR">Português do Brasil</option>
         </select>
         <!-- download cv -->
-        <span class="curriculum__download" id="download-cv">
+        <span class="curriculum__download main__link space-top" id="download-cv">
             <a download class="curriculum__download__anchor" id="download-cv-anchor">
                 <p>Download CV</p>
-                <i class="fa-solid fa-download curriculum__download__icon"></i>
+                <i class="fa-solid fa-download curriculum__download__icon space-left"></i>
             </a>
         </span>
         <!-- canvas for templating CV -->

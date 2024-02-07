@@ -26,11 +26,11 @@ h3 {
 }
 
 .space-bottom {
-    padding-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .space-top {
-    padding-top: 100px;
+    margin-top: 100px;
 }
 
 .space-left {
@@ -113,6 +113,10 @@ header+.about {
     margin: 0 auto;
 }
 
+.about__presentation {
+    white-space: nowrap;
+}
+
 .about__text {
     font-size: 2rem;
     text-align: justify;
@@ -122,6 +126,7 @@ header+.about {
     height: 90px;
     width: 90px;
     margin-right: 30px;
+    border: 1px solid black;
 }
 
 /* education */
@@ -153,8 +158,45 @@ header+.about {
     color: white;
 }
 
-.learning__cards {
+.learning__title {
+    padding: 20px 0;
+}
 
+.learning__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 0 auto;
+    max-width: 1060px;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 30px 20px;
+}
+
+.learning__card {
+    border: 1px solid black;
+}
+
+.learning__card__content {
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learning__card h4 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.learning__card p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.learning__card img {
+    height: 90px;
+    width: 90px;
 }
 
 /* github */
@@ -166,17 +208,7 @@ header+.about {
     background-color: #5F6366;
 }
 
-.github__repos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 1920px;
-    column-gap: 20px;
-    row-gap: 20px;
-    padding: 30px 20px;
-}
+.github__repos {}
 
 .repo__card {
     background-color: white;
@@ -188,8 +220,20 @@ header+.about {
 }
 
 /* CV */
+.curriculum {
+    text-align: center;
+}
+
+.curriculum__select-label, .curriculum__lang-select {
+    font-size: 2rem;
+}
+
 .curriculum__download {
+    display: flex;
     visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
 }
 
 .curriculum__download__anchor {

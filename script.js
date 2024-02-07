@@ -63,9 +63,7 @@ async function getRepoReadme(repName) {
 
     // Get readme as base64, translate to UTF-8 and return it.
     res = await res.text();
-    const result = decodeURIComponent(atob(res.content));
-    console.log("result: ------", result)
-    return result
+    //to do.
 }
 
 /**
@@ -74,7 +72,7 @@ async function getRepoReadme(repName) {
  */
 async function loadCV() {
     // Get the canvas and select properties.
-    const selectedLang = document.querySelector("#curriculum-lang").value;
+    const selectedLang = document.querySelector("#cv-lang-select").value;
     const canvas = document.querySelector("#pdf_renderer");
     const canvasContext = canvas.getContext('2d');
     // If no lang was selected, clear canvas.
