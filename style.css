@@ -25,28 +25,40 @@ h3 {
     font-size: 26px;
 }
 
+p {
+    font-size: 24px;
+}
+
 .space-bottom {
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 }
 
 .space-top {
-    margin-top: 100px;
+    margin-top: 5rem;
 }
 
 .space-left {
     margin-left: 50px;
 }
 
-.normal__link {
+.nowrap {
+    white-space: nowrap;
+}
+
+.normal-link {
     color: black;
 }
 
-.main__link a {
+.main-link {
     color: #00dddd;
 }
 
-.main__link a:hover {
+.main-link:hover {
     color: #00ffff;
+}
+
+.fit-content {
+    width: fit-content;
 }
 
 /* navbar */
@@ -80,7 +92,6 @@ h3 {
 }
 
 .tooltip .tooltip__text {
-    white-space: nowrap;
     visibility: hidden;
     text-align: center;
     z-index: 1;
@@ -109,12 +120,8 @@ header+.about {
 
 .about {
     display: flex;
-    max-width: 50%;
+    width: min-content;
     margin: 0 auto;
-}
-
-.about__presentation {
-    white-space: nowrap;
 }
 
 .about__text {
@@ -136,7 +143,6 @@ header+.about {
 
 .education__item {
     display: flex;
-    width: fit-content;
     align-items: center;
     padding: 20px 0;
     border-top: 1px solid;
@@ -152,6 +158,15 @@ header+.about {
     width: 280px;
 }
 
+/* education-Udemy */
+.education__udemy__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
 /* learning */
 .learning {
     background-color: #5F6366;
@@ -164,16 +179,17 @@ header+.about {
 
 .learning__cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     margin: 0 auto;
-    max-width: 1060px;
-    column-gap: 20px;
-    row-gap: 20px;
+    max-width: 1920px; 
+    gap: 20px;
     padding: 30px 20px;
 }
 
 .learning__card {
-    border: 1px solid black;
+    border: 4px solid black;
+    border-radius: 10px;
+    min-height: 300px;
 }
 
 .learning__card__content {
@@ -197,26 +213,6 @@ header+.about {
 .learning__card img {
     height: 90px;
     width: 90px;
-}
-
-/* github */
-.github__title {
-    color: white;
-}
-
-.github {
-    background-color: #5F6366;
-}
-
-.github__repos {}
-
-.repo__card {
-    background-color: white;
-    border-radius: 8px;
-}
-
-.repo__card>div {
-    padding: 20px;
 }
 
 /* CV */
@@ -247,6 +243,10 @@ header+.about {
     border: 1px solid black;
     border-radius: 10px;
     color: black;
+}
+
+#canvas_container {
+    display: none;
 }
 
 /* footer */
@@ -283,5 +283,4 @@ header+.about {
     right: 0;
     bottom: 0;
     padding: 20px;
-
 }

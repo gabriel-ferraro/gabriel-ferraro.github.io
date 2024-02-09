@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Severino portfolio</title>
     <!-- my icon -->
-    <link rel="icon" href="resources/my-icon.png?v=2" type="image/x-icon">
+    <link rel="icon" href="./resources/imgs/my-icon.png?v=2" type="image/x-icon">
     <!-- my css -->
     <link href="style.css" rel="stylesheet">
     <!-- font-awesome -->
@@ -29,19 +29,19 @@
         <nav class="navbar">
             <ul class="navbar__list">
                 <li class="navbar__item">
-                    <a href="#" class="navbar__link normal__link">Gabriel Ferraro Severino</a>
+                    <a href="#" class="navbar__link normal-link nowrap">Gabriel Ferraro Severino</a>
                 </li>
                 <div class="navbar__item-right">
                     <li class="navbar__item">
-                        <a href="#footer" id="conctact-me" class="navbar__link normal__link">Contact me</a>
+                        <a href="#footer" id="conctact-me" class="navbar__link normal-link nowrap">Contact me</a>
                     </li>
                     <li id="english-mode" onclick="changeLang('en')" class="navbar__item tooltip">
-                        <img class="uk-flag" src="./resources/uk-flag.png" alt="Flag of the United Kindom">
-                        <span class="tooltip__text">Change to english</span>
+                        <img class="uk-flag" src="./resources/imgs/uk-flag.png" alt="Flag of the United Kindom">
+                        <span class="tooltip__text nowrap">Change to english</span>
                     </li>
                     <li id="pt-BR-mode" onclick="changeLang('pt-BR')" class="navbar__item tooltip">
-                        <img class="br-flag" src="./resources/brazil-flag.png" alt="Flag of Brazil">
-                        <span class="tooltip__text">Mudar para pt-BR</span>
+                        <img class="br-flag" src="./resources/imgs/brazil-flag.png" alt="Flag of Brazil">
+                        <span class="tooltip__text nowrap">Mudar para pt-BR</span>
                     </li>
                 </div>
             </ul>
@@ -50,12 +50,13 @@
 
     <!-- about me -->
     <section class="about">
-        <img class="about__icon" src="./resources/my-icon.png" alt="My github icon">
+        <img class="about__icon" src="./resources/imgs/my-icon.png" alt="My github icon">
         <div class="about__info">
-            <h1 id="about-presentation" class="about__presentation space-bottom">Hi, <b>i'm Gabriel Ferraro Severino</b></h1>
-            <p id="about-text" class="about__text main__link">
+            <h1 id="about-presentation" class="about__presentation space-bottom nowrap">Hi, <b>i'm Gabriel Ferraro Severino</b></h1>
+            <p id="about-text" class="about__text">
                 a fullstack developer, software engineer and continuous learner. Currently through new discoveries, I aim to develop smart and efficient solutions.
-                Want to know a little more about me? check my <a class="contact-link" href="https://www.linkedin.com/in/gabriel-severino/">LinkedIn</a> and contact me.
+                Want to know a little more about me? check my <a class="contact-link main-link" href="https://www.linkedin.com/in/gabriel-severino/" target="_blank">LinkedIn</a>
+                and contact me.
             </p>
         </div>
     </section>
@@ -63,46 +64,103 @@
     <!-- education -->
     <section class="education space-bottom space-top space-left">
         <h1 id="education-title" class="education__title space-bottom">Education</h1>
-        <div class="education__item space-left">
+        <div class="education__item space-left fit-content">
             <div class="education__item__div">
-                <h2 id="positivo-name" class="education__item__title space-bottom">Positivo University</h2>
-                <img class="education__item__img" src="./resources/universidade-positivo-logo.png" alt="Positivo University logo">
+                <h2 id="positivo-name" class="education__item__title space-bottom fit-content">Positivo University</h2>
+                <img class="education__item__img" src="./resources/imgs/universidade-positivo-logo.png" alt="Positivo University logo">
             </div>
             <div class="education__item__about">
                 <h3 id="es-title" class="item__about">Software Engineer bachelor's degree - (2020-2023)</h3>
-                <p id="es-text"></p>
+            </div>
+        </div>
+        <!-- Udemy -->
+        <h1 id="udemy-title" class="education__title space-top space-bottom">My Udemy Courses</h1>
+        <div class="education__udemy__grid">
+            <div class="education__item space-left space-bottom">
+                <div class="education__item__div">
+                    <h2 class="education__item__title space-bottom">Java/Node/RabbitMQ</h2>
+                    <img class="education__item__img" src="./resources/imgs/microsservices-course-img.jpg" alt="Microsservices course img">
+                </div>
+                <div class="education__item__about">
+                    <h3 class="item__about">Curso de JavaScript e TypeScript do básico ao avançado</h3>
+                    <h3 id="teacher-template">Tutor/s:</h3><p class="item__instructor">Victor Hugo Negrisoli</p>
+                    <a id="°course-link" class="main-link" href="https://www.udemy.com/course/comunicacao-entre-microsservicos/" target="_blank"><p>Course link</p></a>
+                </div>
+            </div>
+            <div class="education__item space-left space-bottom">
+                <div class="education__item__div">
+                    <h2 class="education__item__title space-bottom">JS/TS</h2>
+                    <img class="education__item__img" src="./resources/imgs/JS-TS-course-img.jpg" alt="JS-TS course img">
+                </div>
+                <div class="education__item__about">
+                    <h3 id="teacher-template" class="item__about">Curso de JavaScript e TypeScript do básico ao avançado JS/TS</h3>
+                    <h3>Tutor/s:</h3><p>Luiz Otávio Miranda</p>
+                    <a id="°course-link" class="main-link" href="https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/" target="_blank">Course link</a>
+                </div>
+            </div>
+            <div class="education__item space-left space-bottom">
+                <div class="education__item__div">
+                    <h2 class="education__item__title space-bottom">HTLM/CSS/JS</h2>
+                    <img class="education__item__img" src="./resources/imgs/frontend-course-img.jpg" alt="Front end course img">
+                </div>
+                <div class="education__item__about">
+                    <h3 class="item__about">Curso de JavaScript e TypeScript do básico ao avançado JS/TS</h3>
+                    <h3 id="teacher-template">Tutor/s:</h3><p>Daniel Tapias Morales</p>
+                    <a id="°course-link" class="main-link" href="https://www.udemy.com/course/curso-web-design-fundamentos-aprenda-html-css-e-javascript/" target="_blank">Course link</a>
+                </div>
+            </div>
+            <div class="education__item space-left space-bottom">
+                <div class="education__item__div">
+                    <h2 id="logic-course-title" class="education__item__title space-bottom">Logic and coding interview preparation</h2>
+                    <img class="education__item__img" src="./resources/imgs/coding-interview-course-imgjpg.jpg" alt="Coding interview course img">
+                </div>
+                <div class="education__item__about">
+                    <h3 class="item__about">Master the Coding Interview: Big Tech (FAANG) Interviews</h3>
+                    <h3 id="teacher-template">Tutor/s:</h3><p>Andrei Neagoie</p>
+                    <a id="°course-link" class="main-link" href="https://www.udemy.com/course/master-the-coding-interview-big-tech-faang-interviews/" target="_blank">Course link</a>
+                </div>
+            </div>
+            <div class="education__item space-left space-bottom">
+                <div class="education__item__div">
+                    <h2 class="education__item__title space-bottom">Linux</h2>
+                    <img class="education__item__img" src="./resources/imgs/linux-course-img.jpg" alt="Linux course img">
+                </div>
+                <div class="education__item__about">
+                    <h3 class="item__about">Complete Linux Training Course to Get Your Dream IT Job 2024</h3>
+                    <h3 id="teacher-template">Tutor/s:</h3><p>Imran Afzal</p>
+                    <a id="°course-link" class="main-link" href="https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/" target="_blank">Course link</a>
+                </div>
+            </div>
+            <div class="education__item space-left space-bottom">
+                <div class="education__item__div">
+                    <h2 class="education__item__title space-bottom">C language</h2>
+                    <img class="education__item__img" src="./resources/imgs/c-course-img.jpg" alt="C lang course img">
+                </div>
+                <div class="education__item__about">
+                    <h3 class="item__about">Advanced C Programming Course</h3>
+                    <h3 id="teacher-template">Tutor/s:</h3><p>Tim Buchalka's Learn Programming Academy</p>
+                    <a id="°course-link" class="main-link" href="https://www.udemy.com/course/advanced-c-programming-course/" target="_blank">Course link</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- projects -->
-    <section class="projects">
+    <!-- <section class="projects">
+        <div class="project__item">
 
-    </section>
-
-    <!-- github: to-do fetching from api and show my main repositories. -->
-    <section style="display: none" class="github">
-        <h1 id="github-title" class="github__title">My Github repositories</h1>
-        <div class="github__repos">
-            <div class="repo__card">
-                <h3 class="repo__card__title">Nome rep aqui</h3>
-                <p class="repo__card__about">See at <a href="/" target="_blank">Github</a></p>
-                <div class="repo__card__readme">readme aqui</div>
-                <p class="repo__card__clone">Clone this repository</p>
-                <button><i class="fa-solid fa-clipboard-list"></i></button>
-            </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- what i'm learning -->
     <section class="learning space-top space-bottom">
         <h1 id="currently-learning" class="learning__title space-left">What i'm currently learning?</h1>
         <div class="learning__cards">
             <div class="learning__card">
-                <h4 class="space-bottom">Linux system administration</h1>
+                <h4 class="space-bottom" id="linux-title">Linux system administration</h1>
                 <div class="learning__card__content">
-                    <img src="./resources/linux-mascot.png" alt="The linux mascot">
-                    <p class="space-left">
+                    <img src="./resources/imgs/linux-mascot.png" alt="The linux mascot">
+                    <p class="space-left" id="linux-content">
                         Understanding and managing unix-based systems is a very important skill for a software developer. 
                         When servers, cellphones and embedded systems need a secure and constantly updated kernel, the best one to choose is Linux.
                     </p>
@@ -111,8 +169,8 @@
             <div class="learning__card">
                 <h4 class="space-bottom">React</h1>
                 <div class="learning__card__content">
-                    <img src="./resources/react-logo.png" alt="React.JS logo">
-                    <p class="space-left">
+                    <img src="./resources/imgs/react-logo.png" alt="React.JS logo">
+                    <p class="space-left" id="react-content">
                         In order to maintain reactive web applications with state changes, multiple components and complex hierarchy, a Javascript framework or library is needed to make things
                         simpler. React is open-source and maintaned by facebook, being a light-weight library prefered by many companies and developers.
                     </p>
@@ -121,8 +179,8 @@
             <div class="learning__card">
                 <h4 class="space-bottom">TypeScript</h1>
                 <div class="learning__card__content">
-                    <img src="./resources/typescript-logo.png" alt="Typescript logo">
-                    <p class="space-left">
+                    <img src="./resources/imgs/typescript-logo.png" alt="Typescript logo">
+                    <p class="space-left" id="typescript-content">
                         Guaranteeing type-safety to a Javascript based project might be important, since it's easier to track down bugs, offereing concise code and less room for
                         misinterpretation to other developers.
                     </p>
@@ -137,13 +195,13 @@
         <!-- cv lang selector -->
         <label id="curriculum-lang-label" for="curriculum-lang" class="curriculum__select-label">Select CV language</label>
         <select onchange="loadCV()" id="cv-lang-select" class="curriculum__lang-select space-left">
-            <option id="curriculum-lang-selector" class="select-cv-lang" value="">Select a language</option>
+            <option id="curriculum-lang-selector" class="select-cv-lang" value="" selected="selected">Select a language</option>
             <option value="en">English</option>
             <option value="pt-BR">Português do Brasil</option>
         </select>
         <!-- download cv -->
-        <span class="curriculum__download main__link space-top" id="download-cv">
-            <a download class="curriculum__download__anchor" id="download-cv-anchor">
+        <span class="curriculum__download space-top" id="download-cv">
+            <a download class="curriculum__download__anchor main-link" id="download-cv-anchor">
                 <p>Download CV</p>
                 <i class="fa-solid fa-download curriculum__download__icon space-left"></i>
             </a>
@@ -155,9 +213,9 @@
     </section>
 
     <div class="return-top tooltip">
-        <a class="normal__link" href="#">
+        <a class="normal-link" href="#">
             <i class="fas fa-chevron-circle-up"></i>
-            <span id="return-top" class="tooltip__text return-top__message">Return to top</span>
+            <span id="return-top" class="tooltip__text return-top__message nowrap">Return to top</span>
         </a>
     </div>
 

@@ -1,0 +1,19 @@
+{
+    "#conctact-me": "Sobre",
+    "#about-presentation": "Olá, meu nome é <b>Gabriel Ferraro Severino</b>",
+    "#about-text": "Sou desenvolvedor fullstack, engenheiro de software e aluno contínuo. Atualmente em processo de novas descobertas, eu quero desenvolver soluções inteligentes e eficientes. Quer saber um pouco mais sobre mim? olhe meu <a class='main-link' href='https://www.linkedin.com/in/gabriel-severino/' target='_blank'>LinkedIn</a> e entre em contato.",
+    "#education-title": "Formação",
+    "#positivo-name": "Universidade Positivo",
+    "#es-title": "Bacharelado em engenharia de software - (2020-2023)",
+    "#°course-link": "Link do curso",
+    "#udemy-title": "Meus cursos da Udemy",
+    "#currently-learning": "O que estou aprendendo agora?",
+    "#linux-title": "Linux system administration",
+    "#linux-content": "Entender e gerenciar sistemas baseados em unix é uma habilidade muito importante para um desenvolvedor de software. Servidores, celulares e embarcados precisam de um kernel seguro e constantemente atualizado, o melhor a se escolher é o Linux.",
+    "#react-content": "Para manter aplicações web reativas com gerenciamento de estado, multiplos componentes e hierarquia complexa, um framework ou biblioteca Javascript se torna necessário para simplificar as coisas. React é open-source e gerenciado pelo facebook, sendo uma biblioteca leve preferida por muitas empresas e desenvolvedores.",
+    "#typescript-content": "Garantir tipagem segura em projetos baseados em Javascript pode ser algo importante, já que bugs são mais facilmente encontrados, oferecendo código consiso e menos espaço para interpretações erradas para outros desenvolvedores.",
+    "#curriculum-title": "Veja meu Curriculum Vitæ",
+    "#curriculum-lang-label": "Selecione um idioma",
+    "#curriculum-lang-selector": "Selecione o idioma do CV",
+    "#return-top": "Voltar para o topo"
+}

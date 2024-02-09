@@ -1,0 +1,19 @@
+{
+    "#conctact-me": "Contact me",
+    "#about-presentation": "Hi, <b>i'm Gabriel Ferraro Severino</b>",
+    "#about-text": "A fullstack developer, software engineer and continuous learner. Currently through new discoveries, I aim to develop smart and efficient solutions. Want to know a little more about me? check my <a class='main-link' href='https://www.linkedin.com/in/gabriel-severino/' target='_blank'>LinkedIn</a> and contact me.",
+    "#education-title": "Education",
+    "#positivo-name": "Positivo University",
+    "#es-title": "Software Engineer bachelor's degree - (2020-2023)",
+    "#°course-link": "Course link",
+    "#udemy-title": "My Udemy Courses",
+    "#currently-learning": "What i'm currently learning?",
+    "#linux-title": "Linux system administration",
+    "#linux-content": "Understanding and managing unix-based systems is a very important skill for a software developer. When servers, cellphones and embedded systems need a secure and constantly updated kernel, the best one to choose is Linux.",
+    "#react-content": "In order to maintain reactive web applications with state changes, multiple components and complex hierarchy, a Javascript framework or library is needed to make things simpler. React is open-source and maintaned by facebook, being a light-weight library prefered by many companies and developers.",
+    "#typescript-content": "Guaranteeing type-safety to a Javascript based project might be important, since it's easier to track down bugs, offereing concise code and less room for misinterpretation to other developers.",
+    "#curriculum-title": "See my Curriculum Vitæ",
+    "#curriculum-lang-label": "Select a language",
+    "#curriculum-lang-selector": "Select CV language",
+    "#return-top": "Return to top"
+}
