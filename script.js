@@ -8,10 +8,14 @@ async function changeLang(lang) {
         return;
     }
 
-    // Update current lang.
-    document.documentElement.lang = lang;
     // Fetch and set the json for currentLang.
     const response = await fetch(`./resources/languages/${lang}.json`);
+    // If language requested doesn't have a resource for it, returns.
+    if (!response.ok) {
+        return;
+    }
+    // Update current lang.
+    document.documentElement.lang = lang;
     const json = await response.json();
     // For each json key-value, set the element innerHTML as the respective value.
     Object.keys(json).forEach(key => {
@@ -20,7 +24,7 @@ async function changeLang(lang) {
         const element = (key[1] == "°") ? document.querySelectorAll(key) : document.querySelector(key);
         // If it's a NodeList, run through all elements and set their value, else check if element exists and set it's single value.
         if (element instanceof NodeList) {
-            element.forEach(el => el.innerHTML = json[key]);        
+            element.forEach(el => el.innerHTML = json[key]);
         } else if (element) {
             element.innerHTML = json[key];
         }
@@ -78,6 +82,10 @@ async function setSnippet(request, location) {
 
 // On page load.
 window.addEventListener("load", () => {
+    const langParam = new URLSearchParams(window.location.search).get("lang");
+    if (langParam) {
+        changeLang(langParam);
+    }
     // Setting the default language of lang selector for CV to the template option: none.
     document.querySelector("#cv-lang-select").value = "";
 });
