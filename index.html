@@ -8,7 +8,7 @@
     <!-- my icon -->
     <link rel="icon" href="./resources/imgs/my-icon.png?v=2" type="image/x-icon">
     <!-- my css -->
-    <link href="style.css" rel="stylesheet">
+    <link href="./resources/styles/main-style.css" rel="stylesheet">
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -20,8 +20,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js"
         integrity="sha512-lHibs5XrZL9hXP3Dhr/d2xJgPy91f2mhVAasrSbMkbmoTSm2Kz8DuSWszBLUg31v+BM6tSiHSqT72xwjaNvl0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- my script -->
-    <script src="script.js"></script>
+    <!-- my scripts -->
+    <script src="./resources/scripts/main-script.js"></script>
+    <script src="./resources/scripts/carousel.js"></script>
 </head>
 
 <body>
@@ -52,7 +53,7 @@
     <section class="about">
         <img class="about__icon" src="./resources/imgs/my-icon.png" alt="My github icon">
         <div class="about__info">
-            <h1 id="about-presentation" class="about__presentation space-bottom nowrap">Hi, <b>i'm Gabriel Ferraro Severino</b></h1>
+            <h1 id="about-presentation" class="about__presentation nowrap">Hi, <b>i'm Gabriel Ferraro Severino</b></h1>
             <p id="about-text" class="about__text">
                 a fullstack developer, software engineer and continuous learner. Currently through new discoveries, I aim to develop smart and efficient solutions.
                 Want to know a little more about me? check my <a class="contact-link main-link" href="https://www.linkedin.com/in/gabriel-severino/" target="_blank">LinkedIn</a>
@@ -61,10 +62,86 @@
         </div>
     </section>
 
+    <!-- projects -->
+    <section id="projects" class="projects space-top">
+        <h1 id="projects-title marker" class="projects__tile space-top space-left">My projects</h1>
+        <div id="projects-carousel" class="projects__carousel space-top">
+            <div class="education__item space-left space-bottom">
+                <div class="project__item">
+                    <h2 class="project__item__title">Java/Node/RabbitMQ</h2>
+                    <img class="project__item__img" src="./resources/imgs/microsservices-course-img.jpg" alt="Microsservices course img">
+                </div>
+                <div class="education__item__about">
+                    <h3 class="item__about">Curso de JavaScript e TypeScript do básico ao avançado</h3>
+                    <h3 id="teacher-template">Tutor/s:</h3><p class="item__instructor">Victor Hugo Negrisoli</p>
+                    <a id="°course-link" class="main-link" href="https://www.udemy.com/course/comunicacao-entre-microsservicos/" target="_blank"><p>Course link</p></a>
+                </div>
+            </div>
+            <div class="project__item">
+                <p>TESTASDASD</p>    
+                <p>TESTASDASD</p>    
+                <p>TESTASDASD</p>    
+            </div>
+            <div class="project__item">
+                <p>TESTASDASD</p>
+                <p>TESTASDASD</p>    
+                <p>TESTASDASD</p>    
+            </div>
+            <div class="project__item">
+                <p>TESTASDASD</p>    
+                <p>TESTASDASD</p>    
+                <p>TESTASDASD</p>    
+            </div>
+            <div class="project__item">
+                <p>TESTASDASD</p>    
+                <p>TESTASDASD</p>    
+                <p>TESTASDASD</p>    
+            </div>
+            <div class="project__item">
+                <p>TESTASDASD</p>
+                <p>TESTASDASD</p>    
+                <p>TESTASDASD</p>    
+            </div>
+            <div class="project__item">
+                <p>TESTASDASD</p>    
+                <p>TESTASDASD</p>    
+                <p>TESTASDASD</p>    
+            </div>
+            <div class="project__item">
+                <p>TESTASDASD</p>    
+                <p>TESTASDASD</p>    
+                <p>TESTASDASD</p>    
+            </div>
+            <div class="project__item">
+                <p>TESTASDASD</p>
+                <p>TESTASDASD</p>    
+                <p>TESTASDASD</p>    
+            </div>
+            <div class="project__item">
+                <p>TESTASDASD</p>    
+                <p>TESTASDASD</p>    
+                <p>TESTASDASD</p>    
+            </div>
+            <div class="project__item">
+                <p>TESTASDASD</p>    
+                <p>TESTASDASD</p>    
+                <p>TESTASDASD</p>    
+            </div>
+            <div class="project__item">
+                <p>TESTASDASD</p>
+                <p>TESTASDASD</p>    
+                <p>TESTASDASD</p>    
+            </div>
+        </div>
+        <div id="selected-project" class="projects__selected space-top space-bottom">
+            <p>selected</p>
+        </div>
+    </section>
+
     <!-- education -->
-    <section class="education space-bottom space-top space-left">
-        <h1 id="education-title" class="education__title space-bottom">Education</h1>
-        <div class="education__item space-left fit-content">
+    <section class="education space-bottom space-top">
+        <h1 id="education-title" class="education__title space-bottom space-left">Education</h1>
+        <div class="education__item space-left fit-content border-up-bottom">
             <div class="education__item__div">
                 <h2 id="positivo-name" class="education__item__title space-bottom fit-content">Positivo University</h2>
                 <img class="education__item__img" src="./resources/imgs/universidade-positivo-logo.png" alt="Positivo University logo">
@@ -74,7 +151,7 @@
             </div>
         </div>
         <!-- Udemy -->
-        <h1 id="udemy-title" class="education__title space-top space-bottom">My Udemy Courses</h1>
+        <h1 id="udemy-title" class="education__title space-top space-bottom space-left">My Udemy Courses</h1>
         <div class="education__udemy__grid">
             <div class="education__item space-left space-bottom">
                 <div class="education__item__div">
@@ -145,22 +222,15 @@
         </div>
     </section>
 
-    <!-- projects -->
-    <!-- <section class="projects">
-        <div class="project__item">
-
-        </div>
-    </section> -->
-
     <!-- what i'm learning -->
     <section class="learning space-top space-bottom">
-        <h1 id="currently-learning" class="learning__title space-left">What i'm currently learning?</h1>
+        <h1 id="currently-learning" class="learning__title space-bottom">What i'm currently learning?</h1>
         <div class="learning__cards">
             <div class="learning__card">
                 <h4 class="space-bottom" id="linux-title">Linux system administration</h1>
                 <div class="learning__card__content">
                     <img src="./resources/imgs/linux-mascot.png" alt="The linux mascot">
-                    <p class="space-left" id="linux-content">
+                    <p class="card__paragraph" id="linux-content">
                         Understanding and managing unix-based systems is a very important skill for a software developer. 
                         When servers, cellphones and embedded systems need a secure and constantly updated kernel, the best one to choose is Linux.
                     </p>
@@ -170,7 +240,7 @@
                 <h4 class="space-bottom">React</h1>
                 <div class="learning__card__content">
                     <img src="./resources/imgs/react-logo.png" alt="React.JS logo">
-                    <p class="space-left" id="react-content">
+                    <p class="card__paragraph" id="react-content">
                         In order to maintain reactive web applications with state changes, multiple components and complex hierarchy, a Javascript framework or library is needed to make things
                         simpler. React is open-source and maintaned by facebook, being a light-weight library prefered by many companies and developers.
                     </p>
@@ -180,7 +250,7 @@
                 <h4 class="space-bottom">TypeScript</h1>
                 <div class="learning__card__content">
                     <img src="./resources/imgs/typescript-logo.png" alt="Typescript logo">
-                    <p class="space-left" id="typescript-content">
+                    <p class="card__paragraph" id="typescript-content">
                         Guaranteeing type-safety to a Javascript based project might be important, since it's easier to track down bugs, offereing concise code and less room for
                         misinterpretation to other developers.
                     </p>
@@ -208,18 +278,18 @@
         </span>
         <!-- canvas for templating CV -->
         <div id="canvas_container">
-            <canvas id="pdf_renderer"></canvas>
+            <canvas id="pdf-renderer"></canvas>
         </div>
     </section>
 
-    <div class="return-top tooltip">
-        <a class="normal-link" href="#">
+    <a class="normal-link" href="#">
+        <div class="return-top tooltip">
             <i class="fas fa-chevron-circle-up"></i>
             <span id="return-top" class="tooltip__text return-top__message nowrap">Return to top</span>
-        </a>
-    </div>
+        </div>
+    </a>
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <a href="mailto:gabrielferraro00@gmail.com" class="footer__email">gabrielferraro00@gmail.com</a>
         <ul class="contact-list">
             <li class="contact-list__item">

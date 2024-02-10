@@ -1,8 +1,9 @@
 {
-    "#conctact-me": "Sobre",
+    "#conctact-me": "Contato",
     "#about-presentation": "Olá, meu nome é <b>Gabriel Ferraro Severino</b>",
     "#about-text": "Sou desenvolvedor fullstack, engenheiro de software e aluno contínuo. Atualmente em processo de novas descobertas, eu quero desenvolver soluções inteligentes e eficientes. Quer saber um pouco mais sobre mim? olhe meu <a class='main-link' href='https://www.linkedin.com/in/gabriel-severino/' target='_blank'>LinkedIn</a> e entre em contato.",
     "#education-title": "Formação",
+    "#projects-title": "Meus projetos",
     "#positivo-name": "Universidade Positivo",
     "#es-title": "Bacharelado em engenharia de software - (2020-2023)",
     "#°course-link": "Link do curso",
