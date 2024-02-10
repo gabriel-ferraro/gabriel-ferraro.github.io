@@ -30,12 +30,6 @@ p {
     font-size: 26px;
 }
 
-.marker::marker {
-    font-size: 2000px;
-    content: '°';
-    color: red
-}
-
 .space-bottom {
     margin-bottom: 3rem;
 }
@@ -46,6 +40,10 @@ p {
 
 .space-left {
     margin-left: 7rem;
+}
+
+.two-space-left {
+    margin-left: 14rem;
 }
 
 .nowrap {
@@ -64,13 +62,9 @@ p {
     color: #00ffff;
 }
 
-.fit-content {
-    width: fit-content;
-}
-
 .border-up-bottom {
-    border-top: 1px solid;
-    border-bottom: 1px solid;
+    border-left: none !important;
+    border-right: none !important;
 }
 
 /* navbar */
@@ -151,7 +145,7 @@ header+.about {
 .projects {
     color: white;
     background-color: #4D6D9A;
-    padding: 10px 0;
+    padding: 5rem;
 }
 
 .projects__carousel {
@@ -159,12 +153,12 @@ header+.about {
     cursor: grab;
     display: flex;
     overflow-x: auto;
-    max-width: 1080px;
+    max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
     /* setting scroll bar color and width in Gecko based browsers. */
     scrollbar-color: #888 #f1f1f1;
-    scrollbar-width: thin
+    scrollbar-width: thin;
 }
 
 /* setting scroll bar color and width in WebKit based browsers */
@@ -185,14 +179,66 @@ header+.about {
 }
 
 .project__item {
+    cursor: pointer;
     flex: 0 0 auto;
-    width: 300px;
-    margin-right: 20px;
+    text-align: center;
+    width: 28rem;
+    height: 24rem;
+    margin-right: 4rem;
     scroll-snap-align: start;
+}
+
+.project__item h1, .project__item p {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    background-color: rgba(80, 80, 80, 0.8);
 }
 
 .projects__selected {
     text-align: center;
+}
+
+/* projects background imgs */
+.background-image-template {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    
+}
+
+.background-image-template:hover {
+    opacity: initial;
+}
+
+#personni-moveis {
+    background-image: url(../imgs/uk-flag.png);
+}
+
+#gotrip {
+    background-image: url(../imgs/gotrip-home.png);
+}
+
+#pede-facil {
+    background-image: url(../imgs/pedeFacil-start.png);
+}
+
+#pokedex {
+    background-image: url(../imgs/pokedex-pokemon.jpeg);
+}
+
+#observer-pattern {
+    background-image: url(../imgs/observer-pattern-UML.png);
+}
+
+#state-pattern {
+    background-image: url(../imgs/state-pattern-UML.png);
+}
+
+#proUni-analysis {
+    background-image: url(../imgs/graph-proUni.png);
+}
+
+#yt-dlp-GUI {
+    background-image: url(../imgs/not-available.jfif);
 }
 
 /* education */
@@ -202,11 +248,13 @@ header+.about {
 
 .education__item {
     display: flex;
-    padding: 20px 0;
+    align-items: center;
+    border: 1px solid black;
+    padding: 2rem;
 }
 
 .education__item__about {
-    margin-left: 40px;
+    margin-left: 2rem;
 }
 
 .education__item__img {
@@ -214,13 +262,18 @@ header+.about {
     width: 280px;
 }
 
+.education__item a {
+    font-size: 1.5rem;
+}
+
 /* education-Udemy */
 .education__udemy__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
+    gap: 2rem;
     margin: 0 auto;
-    max-width: 1920px;
+    max-width: 1500px;
+    padding: 0 2.5rem;
 }
 
 /* learning */
@@ -236,7 +289,7 @@ header+.about {
 
 .learning__cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     margin: 0 auto;
     max-width: 1920px;
     gap: 3rem;
@@ -287,16 +340,13 @@ header+.about {
     display: flex;
     visibility: hidden;
     justify-content: center;
-    align-items: center;
     font-size: 2em;
 }
 
-.curriculum__download__anchor {
-    display: flex;
-    justify-content: center;
-}
-
 .curriculum__download__icon {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 3.5rem;
     cursor: pointer;
     border: 1px solid black;

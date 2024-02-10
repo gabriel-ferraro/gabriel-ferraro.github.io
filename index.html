@@ -54,168 +54,138 @@
         <img class="about__icon" src="./resources/imgs/my-icon.png" alt="My github icon">
         <div class="about__info">
             <h1 id="about-presentation" class="about__presentation nowrap">Hi, <b>i'm Gabriel Ferraro Severino</b></h1>
-            <p id="about-text" class="about__text">
+            <p id="about-text" class="about__text space-bottom">
                 a fullstack developer, software engineer and continuous learner. Currently through new discoveries, I aim to develop smart and efficient solutions.
                 Want to know a little more about me? check my <a class="contact-link main-link" href="https://www.linkedin.com/in/gabriel-severino/" target="_blank">LinkedIn</a>
                 and contact me.
+            </p>
+            <p class="about__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil deleniti sed necessitatibus repudiandae explicabo ipsum odit minima saepe consequuntur totam? Cupiditate consequatur tempora adipisci dolorum. Temporibus sunt itaque quis perspiciatis.
+                Iure ducimus quae quibusdam soluta voluptas consequuntur. Recusandae quae nihil rem provident nobis quidem sunt aut.
             </p>
         </div>
     </section>
 
     <!-- projects -->
     <section id="projects" class="projects space-top">
-        <h1 id="projects-title marker" class="projects__tile space-top space-left">My projects</h1>
+        <h1 id="projects-title" class="projects__title space-top space-left">My projects</h1>
         <div id="projects-carousel" class="projects__carousel space-top">
-            <div class="education__item space-left space-bottom">
-                <div class="project__item">
-                    <h2 class="project__item__title">Java/Node/RabbitMQ</h2>
-                    <img class="project__item__img" src="./resources/imgs/microsservices-course-img.jpg" alt="Microsservices course img">
-                </div>
-                <div class="education__item__about">
-                    <h3 class="item__about">Curso de JavaScript e TypeScript do básico ao avançado</h3>
-                    <h3 id="teacher-template">Tutor/s:</h3><p class="item__instructor">Victor Hugo Negrisoli</p>
-                    <a id="°course-link" class="main-link" href="https://www.udemy.com/course/comunicacao-entre-microsservicos/" target="_blank"><p>Course link</p></a>
-                </div>
+            <div onclick="renderProject('personni-moveis')" id="personni-moveis" class="project__item background-image-template space-bottom">
+                <h1 class="space-top">Personni Móveis</h1>
+                <p class="space-top">My final university project.</p>
             </div>
-            <div class="project__item">
-                <p>TESTASDASD</p>    
-                <p>TESTASDASD</p>    
-                <p>TESTASDASD</p>    
+            <div onclick="renderProject('gotrip')" id="gotrip" class="project__item background-image-template space-bottom">
+                <h1 class="space-top">Go Trip</h1>
+                <p class="space-top">Airline ticket system - clone website.</p>
             </div>
-            <div class="project__item">
-                <p>TESTASDASD</p>
-                <p>TESTASDASD</p>    
-                <p>TESTASDASD</p>    
+            <div onclick="renderProject('pedeFacil')" id="pede-facil" class="project__item background-image-template space-bottom">
+                <h1 class="space-top">Pede Fácil</h1>
+                <p class="space-top">Totem like system for ordering food - clone project.</p>
             </div>
-            <div class="project__item">
-                <p>TESTASDASD</p>    
-                <p>TESTASDASD</p>    
-                <p>TESTASDASD</p>    
+            <div onclick="renderProject('pokedex')" id="pokedex" class="project__item background-image-template space-bottom">
+                <h1 class="space-top">Android Pokedex</h1>
+                <p class="space-top">Pokedex consuming the pokeAPI in Android.</p>
             </div>
-            <div class="project__item">
-                <p>TESTASDASD</p>    
-                <p>TESTASDASD</p>    
-                <p>TESTASDASD</p>    
+            <div onclick="renderProject('observer-pattern')" id="observer-pattern" class="project__item background-image-template space-bottom">
+                <h1 class="space-top">Observer Pattern</h1>
+                <p class="space-top">Applied as a supermarket stock control app with GUI in Java Swing.</p>
             </div>
-            <div class="project__item">
-                <p>TESTASDASD</p>
-                <p>TESTASDASD</p>    
-                <p>TESTASDASD</p>    
+            <div onclick="renderProject('state-pattern')" id="state-pattern" class="project__item background-image-template space-bottom">
+                <h1 class="space-top">State Pattern</h1>
+                <p class="space-top">State pattern represented in a game-like manner with Java Swing.</p>
             </div>
-            <div class="project__item">
-                <p>TESTASDASD</p>    
-                <p>TESTASDASD</p>    
-                <p>TESTASDASD</p>    
+            <div onclick="renderProject('proUni-analysis')" id="proUni-analysis" class="project__item background-image-template space-bottom">
+                <h1 class="space-top">ProUni data analysis (python)</h1>
+                <p id="proUni-analysis-content" class="space-top">Data analysis in ProUni 2018 DataSet</p>
             </div>
-            <div class="project__item">
-                <p>TESTASDASD</p>    
-                <p>TESTASDASD</p>    
-                <p>TESTASDASD</p>    
-            </div>
-            <div class="project__item">
-                <p>TESTASDASD</p>
-                <p>TESTASDASD</p>    
-                <p>TESTASDASD</p>    
-            </div>
-            <div class="project__item">
-                <p>TESTASDASD</p>    
-                <p>TESTASDASD</p>    
-                <p>TESTASDASD</p>    
-            </div>
-            <div class="project__item">
-                <p>TESTASDASD</p>    
-                <p>TESTASDASD</p>    
-                <p>TESTASDASD</p>    
-            </div>
-            <div class="project__item">
-                <p>TESTASDASD</p>
-                <p>TESTASDASD</p>    
-                <p>TESTASDASD</p>    
+            <div onclick="renderProject('yt-dlp-GUI')" id="yt-dlp-GUI" class="project__item background-image-template space-bottom">
+                <h1 class="space-top">Youtube DLP GUI</h1>
+                <p class="space-top">Project under construction</p>
             </div>
         </div>
         <div id="selected-project" class="projects__selected space-top space-bottom">
-            <p>selected</p>
+            
         </div>
     </section>
 
     <!-- education -->
     <section class="education space-bottom space-top">
         <h1 id="education-title" class="education__title space-bottom space-left">Education</h1>
-        <div class="education__item space-left fit-content border-up-bottom">
-            <div class="education__item__div">
-                <h2 id="positivo-name" class="education__item__title space-bottom fit-content">Positivo University</h2>
-                <img class="education__item__img" src="./resources/imgs/universidade-positivo-logo.png" alt="Positivo University logo">
+        <div class="education__item border-up-bottom">
+            <div class="education__item__div two-space-left">
+                <h2 id="positivo-name" class="education__item__title space-bottom nowrap">Positivo University</h2>
+                <img class="education__item__img" src="./resources/imgs/universidade-positivo-logo.png" alt="University Positivo logo">
             </div>
             <div class="education__item__about">
-                <h3 id="es-title" class="item__about">Software Engineer bachelor's degree - (2020-2023)</h3>
+                <h3 id="es-title" class="item__about nowrap">Software Engineer bachelor's degree - (2020-2023)</h3>
             </div>
         </div>
         <!-- Udemy -->
         <h1 id="udemy-title" class="education__title space-top space-bottom space-left">My Udemy Courses</h1>
         <div class="education__udemy__grid">
-            <div class="education__item space-left space-bottom">
+            <div class="education__item">
                 <div class="education__item__div">
                     <h2 class="education__item__title space-bottom">Java/Node/RabbitMQ</h2>
                     <img class="education__item__img" src="./resources/imgs/microsservices-course-img.jpg" alt="Microsservices course img">
                 </div>
                 <div class="education__item__about">
-                    <h3 class="item__about">Curso de JavaScript e TypeScript do básico ao avançado</h3>
-                    <h3 id="teacher-template">Tutor/s:</h3><p class="item__instructor">Victor Hugo Negrisoli</p>
-                    <a id="°course-link" class="main-link" href="https://www.udemy.com/course/comunicacao-entre-microsservicos/" target="_blank"><p>Course link</p></a>
+                    <h3 class="item__about space-bottom">Curso de JavaScript e TypeScript do básico ao avançado</h3>
+                    <h3>Tutor/s: <b class="item__instructor">Victor Hugo Negrisoli</b></h3>
+                    <a id="°course-link" class="main-link space-top" href="https://www.udemy.com/course/comunicacao-entre-microsservicos/" target="_blank">Course link</a>
                 </div>
             </div>
-            <div class="education__item space-left space-bottom">
+            <div class="education__item">
                 <div class="education__item__div">
                     <h2 class="education__item__title space-bottom">JS/TS</h2>
                     <img class="education__item__img" src="./resources/imgs/JS-TS-course-img.jpg" alt="JS-TS course img">
                 </div>
                 <div class="education__item__about">
-                    <h3 id="teacher-template" class="item__about">Curso de JavaScript e TypeScript do básico ao avançado JS/TS</h3>
-                    <h3>Tutor/s:</h3><p>Luiz Otávio Miranda</p>
+                    <h3 class="item__about space-bottom">Curso de JavaScript e TypeScript do básico ao avançado JS/TS</h3>
+                    <h3>Tutor/s: <b>Luiz Otávio Miranda</b></h3>
                     <a id="°course-link" class="main-link" href="https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/" target="_blank">Course link</a>
                 </div>
             </div>
-            <div class="education__item space-left space-bottom">
+            <div class="education__item">
                 <div class="education__item__div">
                     <h2 class="education__item__title space-bottom">HTLM/CSS/JS</h2>
                     <img class="education__item__img" src="./resources/imgs/frontend-course-img.jpg" alt="Front end course img">
                 </div>
                 <div class="education__item__about">
-                    <h3 class="item__about">Curso de JavaScript e TypeScript do básico ao avançado JS/TS</h3>
-                    <h3 id="teacher-template">Tutor/s:</h3><p>Daniel Tapias Morales</p>
+                    <h3 class="item__about space-bottom">Curso de JavaScript e TypeScript do básico ao avançado JS/TS</h3>
+                    <h3>Tutor/s: <b>Daniel Tapias Morales</b></h3>
                     <a id="°course-link" class="main-link" href="https://www.udemy.com/course/curso-web-design-fundamentos-aprenda-html-css-e-javascript/" target="_blank">Course link</a>
                 </div>
             </div>
-            <div class="education__item space-left space-bottom">
+            <div class="education__item">
                 <div class="education__item__div">
                     <h2 id="logic-course-title" class="education__item__title space-bottom">Logic and coding interview preparation</h2>
                     <img class="education__item__img" src="./resources/imgs/coding-interview-course-imgjpg.jpg" alt="Coding interview course img">
                 </div>
                 <div class="education__item__about">
-                    <h3 class="item__about">Master the Coding Interview: Big Tech (FAANG) Interviews</h3>
-                    <h3 id="teacher-template">Tutor/s:</h3><p>Andrei Neagoie</p>
+                    <h3 class="item__about space-bottom">Master the Coding Interview: Big Tech (FAANG) Interviews</h3>
+                    <h3>Tutor/s: <b>Andrei Neagoie</b></h3>
                     <a id="°course-link" class="main-link" href="https://www.udemy.com/course/master-the-coding-interview-big-tech-faang-interviews/" target="_blank">Course link</a>
                 </div>
             </div>
-            <div class="education__item space-left space-bottom">
+            <div class="education__item">
                 <div class="education__item__div">
                     <h2 class="education__item__title space-bottom">Linux</h2>
                     <img class="education__item__img" src="./resources/imgs/linux-course-img.jpg" alt="Linux course img">
                 </div>
                 <div class="education__item__about">
-                    <h3 class="item__about">Complete Linux Training Course to Get Your Dream IT Job 2024</h3>
-                    <h3 id="teacher-template">Tutor/s:</h3><p>Imran Afzal</p>
+                    <h3 class="item__about space-bottom">Complete Linux Training Course to Get Your Dream IT Job 2024</h3>
+                    <h3>Tutor/s: <b>Imran Afzal</b></h3>
                     <a id="°course-link" class="main-link" href="https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/" target="_blank">Course link</a>
                 </div>
             </div>
-            <div class="education__item space-left space-bottom">
+            <div class="education__item">
                 <div class="education__item__div">
                     <h2 class="education__item__title space-bottom">C language</h2>
                     <img class="education__item__img" src="./resources/imgs/c-course-img.jpg" alt="C lang course img">
                 </div>
                 <div class="education__item__about">
-                    <h3 class="item__about">Advanced C Programming Course</h3>
-                    <h3 id="teacher-template">Tutor/s:</h3><p>Tim Buchalka's Learn Programming Academy</p>
+                    <h3 class="item__about space-bottom">Advanced C Programming Course</h3>
+                    <h3>Tutor/s: <b>Tim Buchalka's Learn Programming Academy</b></h3>
                     <a id="°course-link" class="main-link" href="https://www.udemy.com/course/advanced-c-programming-course/" target="_blank">Course link</a>
                 </div>
             </div>
@@ -260,7 +230,7 @@
     </section>
 
     <!-- my CV -->
-    <section class="curriculum space-left space-bottom">
+    <section class="curriculum space-bottom">
         <h1 id="curriculum-title" class="curriculum__title space-bottom">See my Curriculum Vitæ</h1>
         <!-- cv lang selector -->
         <label id="curriculum-lang-label" for="curriculum-lang" class="curriculum__select-label">Select CV language</label>
@@ -282,6 +252,7 @@
         </div>
     </section>
 
+    <!-- return top floating button -->
     <a class="normal-link" href="#">
         <div class="return-top tooltip">
             <i class="fas fa-chevron-circle-up"></i>
@@ -293,12 +264,14 @@
         <a href="mailto:gabrielferraro00@gmail.com" class="footer__email">gabrielferraro00@gmail.com</a>
         <ul class="contact-list">
             <li class="contact-list__item">
-                <a class="social-list__link" href="https://www.linkedin.com/in/gabriel-severino/" target="_blank"><i
-                        class="fa-brands fa-linkedin-in"></i></a>
+                <a class="social-list__link" href="https://www.linkedin.com/in/gabriel-severino/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
             </li>
             <li class="contact-list__item">
-                <a class="social-list__link" href="https://github.com/gabriel-ferraro/" target="_blank"><i
-                        class="fa-brands fa-github github-icon"></i></a>
+                <a class="social-list__link" href="https://github.com/gabriel-ferraro/" target="_blank">
+                    <i class="fa-brands fa-github github-icon"></i>
+                </a>
             </li>
         </ul>
     </footer>

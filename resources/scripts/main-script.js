@@ -115,15 +115,15 @@ function setSearchParamLangValue(newValue) {
 }
 
 /**
- * Recieves a project element id as argument, moves HTML viewport to projects section.
+ * Recieves a project element id as argument, moves HTML viewport to project section.
  * @param {String} projectId id of project element.
  */
-async function moveToProject(projectId) {
+async function renderProject(projectId) {
     // setSnippet loads the resource (project) at the location selected-project if successful, and returns a Promise<boolean>,
     // because async functions wrap the return value into a Promise, so to get the expected boolean, resolving it is necessary.
     const projectLoaded = await setSnippet(("./resources/snippets/" + projectId + ".html"), "#selected-project");
     // If project resource loaded succesfully, scroll view to projects section.
-    if (projectLoaded) document.querySelector("#projects").scrollIntoView({ block: "start", behavior: 'smooth' });
+    if (projectLoaded) document.querySelector("#projects").scrollIntoView({ block: "end", behavior: 'smooth' });
 }
 
 // On page load.
@@ -134,7 +134,7 @@ window.addEventListener("load", () => {
 
     // Get URL param, if exists, load project and scroll the view for it's HTML section.
     const projectParam = getSearchParamValue("project");
-    if (projectParam) moveToProject(projectParam);
+    if (projectParam) renderProject(projectParam);
 
     // Generate projects carousel behaviour.
     controlCarousel("#projects-carousel");
