@@ -400,6 +400,10 @@ header {
 }
 
 @media (max-width: 850px) {
+    html {
+        background-color: red
+    }
+
     h1 {
         font-size: 36px;
     }
