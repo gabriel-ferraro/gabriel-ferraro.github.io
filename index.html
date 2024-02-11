@@ -49,11 +49,13 @@
         </nav>
     </header>
 
+    <h1 id="screen-message">This portfolio can be better visualized in a device with a width larger than 300px.</h1>
+
     <!-- about me -->
     <section class="about">
         <img class="about__icon" src="./resources/imgs/my-icon.png" alt="My github icon">
         <div class="about__info">
-            <h1 id="about-presentation" class="about__presentation nowrap">Hi, <b>i'm Gabriel Ferraro Severino</b></h1>
+            <h1 id="about-presentation" class="about__presentation">Hi, <b>i'm Gabriel Ferraro Severino</b></h1>
             <p id="about-text" class="about__text space-bottom">
                 a fullstack developer, software engineer and continuous learner. Currently through new discoveries, I aim to develop smart and efficient solutions.
                 Want to know a little more about me? check my <a class="contact-link main-link" href="https://www.linkedin.com/in/gabriel-severino/" target="_blank">LinkedIn</a>
@@ -78,7 +80,7 @@
                 <h1 class="space-top">Go Trip</h1>
                 <p class="space-top">Airline ticket system - clone website.</p>
             </div>
-            <div onclick="renderProject('pedeFacil')" id="pede-facil" class="project__item background-image-template space-bottom">
+            <div onclick="renderProject('pede-facil')" id="pede-facil" class="project__item background-image-template space-bottom">
                 <h1 class="space-top">Pede Fácil</h1>
                 <p class="space-top">Totem like system for ordering food - clone project.</p>
             </div>
@@ -103,6 +105,7 @@
                 <p class="space-top">Project under construction</p>
             </div>
         </div>
+        <!-- show projects onclick -->
         <div id="selected-project" class="projects__selected space-top space-bottom">
             
         </div>
@@ -113,11 +116,11 @@
         <h1 id="education-title" class="education__title space-bottom space-left">Education</h1>
         <div class="education__item border-up-bottom">
             <div class="education__item__div two-space-left">
-                <h2 id="positivo-name" class="education__item__title space-bottom nowrap">Positivo University</h2>
-                <img class="education__item__img" src="./resources/imgs/universidade-positivo-logo.png" alt="University Positivo logo">
+                <h2 id="positivo-name" class="education__item__title space-bottom">Positivo University</h2>
+                <img class="education__uni__img" src="./resources/imgs/universidade-positivo-logo.png" alt="University Positivo logo">
             </div>
             <div class="education__item__about">
-                <h3 id="es-title" class="item__about nowrap">Software Engineer bachelor's degree - (2020-2023)</h3>
+                <h3 id="es-title" class="item__about">Software Engineer bachelor's degree - (2020-2023)</h3>
             </div>
         </div>
         <!-- Udemy -->
@@ -262,7 +265,7 @@
 
     <footer id="footer" class="footer">
         <a href="mailto:gabrielferraro00@gmail.com" class="footer__email">gabrielferraro00@gmail.com</a>
-        <ul class="contact-list">
+        <ul class="footer__contact-list space-top">
             <li class="contact-list__item">
                 <a class="social-list__link" href="https://www.linkedin.com/in/gabriel-severino/" target="_blank">
                     <i class="fa-brands fa-linkedin-in"></i>

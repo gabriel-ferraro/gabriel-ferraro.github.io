@@ -30,6 +30,10 @@ p {
     font-size: 26px;
 }
 
+#screen-message {
+    display: none;
+}
+
 .space-bottom {
     margin-bottom: 3rem;
 }
@@ -43,7 +47,7 @@ p {
 }
 
 .two-space-left {
-    margin-left: 14rem;
+    margin-left: 10rem;
 }
 
 .nowrap {
@@ -71,7 +75,7 @@ p {
 .navbar__list {
     background-color: rgba(255, 255, 255, 0.9);
     display: flex;
-    padding: 16px;
+    padding: 1rem;
     font-size: 2rem;
     width: 100%;
     position: fixed;
@@ -79,7 +83,7 @@ p {
 }
 
 .navbar__item {
-    padding-right: 30px;
+    margin-right: 2rem;
 }
 
 .navbar__item img {
@@ -89,6 +93,11 @@ p {
 .navbar__item-right {
     display: flex;
     margin-left: auto;
+}
+
+.navbar__item img {
+    width: 65px;
+    height: 36px;
 }
 
 .tooltip {
@@ -113,20 +122,16 @@ p {
     visibility: visible;
 }
 
-.navbar__item img {
-    height: 36px;
-    width: 65px;
-}
-
 /* about me */
-header+.about {
+header {
     margin-top: 11rem;
 }
 
 .about {
     display: flex;
-    width: min-content;
+    width: fit-content;
     margin: 0 auto;
+    padding: 0 4rem;
 }
 
 .about__text {
@@ -257,7 +262,7 @@ header+.about {
     margin-left: 2rem;
 }
 
-.education__item__img {
+.education__item__img, .education__uni__img {
     height: 90px;
     width: 280px;
 }
@@ -303,7 +308,7 @@ header+.about {
 
 .learning__card__content {
     border-radius: 10px;
-    padding: 20px;
+    padding: 1rem;
     display: flex;
 }
 
@@ -364,17 +369,17 @@ header+.about {
     background: #4D6D9A;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 1rem 0;
 }
 
 .footer__email {
     color: white;
 }
 
-.contact-list {
+.footer__contact-list {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 2rem;
 }
 
 .contact-list__item {
@@ -387,9 +392,211 @@ header+.about {
 
 /* return */
 .return-top {
-    font-size: 66px;
+    font-size: 4rem;
     position: fixed;
     right: 0;
     bottom: 0;
     padding: 20px;
+}
+
+@media (max-width: 850px) {
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 26px;
+    }
+    
+    h3 {
+        font-size: 26px;
+    }
+    
+    p {
+        font-size: 26px;
+    }
+    
+}
+
+@media (max-width: 760px) {
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 26px;
+    }
+    
+    h3 {
+        font-size: 23px;
+    }
+    
+    p {
+        font-size: 23px;
+    }
+
+    /* about */
+    .about {
+        display: block;
+        text-align: center;
+    }
+
+    .about__icon {
+        margin-bottom: 2rem;
+    }
+
+    /* projects */
+    .projects__title {
+        text-align: center;
+        margin: 0;
+    }
+
+    .project__item {
+        width: 15rem;
+        height: 11rem;
+    }
+
+    .project__item h1, .project__item p {
+        font-size: 1rem;
+    }
+
+    .project__item p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* education */
+    .education__title {
+        margin: 2.5rem auto;
+        text-align: center;
+    }
+
+    .education__item {
+        display: block;
+        text-align: center;
+    }
+
+    .education__item__div {
+        margin: 0 auto;
+    }
+
+    .education__item__about{ 
+        margin-left: initial;
+    }
+
+    .education__udemy__grid {
+        display: block;
+        text-align: center;
+    }
+
+    .education__item {
+        margin-bottom: 1rem;
+    }
+
+    /* cv */
+    .curriculum__lang-select {
+        display: block;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+
+    /* footer */
+    footer a {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 580px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    /* projects */
+    .project__item {
+        width: 12rem;
+        height: 7rem;
+    }
+
+    /* learning */
+    .learning__cards {
+        display: block;
+    }
+
+    .learning__card {
+        margin-bottom: 1rem;
+    }
+
+    .learning__card h4 {
+        font-size: 2rem;
+    }
+
+    .learning__card__content {
+        display: block;
+        text-align: center;
+    }
+
+    .card__paragraph {
+        margin-left: initial;
+    }
+}
+
+@media (max-width: 440px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    /* projects */
+    .project__item {
+        width: 9rem;
+        height: 6rem;
+        margin-right: 1rem;
+    }
+
+    .project__item h1, .project__item p {
+        font-size: 0.3rem;
+    }
+
+    .project__item p {
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+
+    /* education */
+    .education__uni__img {
+        height: 60px;
+        width: 250px;
+    }
+
+    .education__item__img {
+        height: 60px;
+        width: 150px;
+    }
+
+    /* learning */
+    .learning__card {
+        grid-area: 0;
+    }
+
+    /* about */
+    .about__text {
+        font-size: 0.9rem;
+    }
+
+    footer a {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 299px) {
+    #screen-message {
+        display: initial;
+    }
 }

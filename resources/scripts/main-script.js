@@ -1,4 +1,11 @@
 /**
+ * Toggles navbar menu and show hidden items for responsivity.
+ */
+function toggleMenu() {
+    document.querySelector("#sidenav").classList.toggle("active");
+}
+
+/**
  * Changes the page language between en and pt-BR.
  * @param {String} lang the selected language.
  */
