@@ -1,9 +1,23 @@
 /**
- * Toggles menu-items style for responsivity.
+ * Toggles navbar menu style for responsivity.
+ * If navbar menu is activated and user clicks outside the navbar or outside return top, toggles the style.
  */
+
 function toggleMenu() {
-    // Switch style for setting sidenav properties in smaller screens.
-    document.getElementById("navbar-menu").classList.toggle("active");
+    const navmenu = document.getElementById("navbar-menu");
+    // Named function for the event listener. Closes navbar after it's activated.
+    function clickOutsideHandler(event) {
+        // Check if the clicked element is not the toggle button itself, (nor any element with tag normal-link) or within the menu.
+        if (!event.target.closest(".normal-link") && !event.target.closest("#navbar-menu")) {
+            navmenu.classList.remove("active");
+            // Remove the event listener after it's been triggered once
+            document.removeEventListener("click", clickOutsideHandler);
+        }
+    }
+    // Add the event listener.
+    document.addEventListener("click", clickOutsideHandler);
+    // apply the navbar menu style.
+    navmenu.classList.toggle("active");
 }
 
 /**
