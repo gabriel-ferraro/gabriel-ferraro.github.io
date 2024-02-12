@@ -32,6 +32,7 @@ p {
 
 #screen-message {
     display: none;
+    margin: 20px;
 }
 
 .space-bottom {
@@ -98,6 +99,37 @@ p {
 .navbar__item img {
     width: 65px;
     height: 36px;
+}
+
+.sidenav-icon {
+    display: none;
+}
+
+/* nav menu */
+.navbar__menu {
+    display: none;
+}
+  
+.navbar__menu.active {
+    display: flex;
+    flex-direction: column;
+    background-color: #444;
+    position: absolute;
+    top: 4rem;
+    width: 200px;
+    padding: 10px;
+}
+  
+.navbar__menu__item {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #5F6366;
+    cursor: pointer;
+}
+
+.navbar__link {
+    font-size: 1.5rem;
 }
 
 .tooltip {
@@ -399,11 +431,8 @@ header {
     padding: 20px;
 }
 
+/* responsivity for screens with a width bigger than 300px */
 @media (max-width: 850px) {
-    html {
-        background-color: red
-    }
-
     h1 {
         font-size: 36px;
     }
@@ -419,7 +448,50 @@ header {
     p {
         font-size: 26px;
     }
+
+    .sidenav-icon {
+        display: initial;
+    }
+
+    .sidenav-icon i {
+        cursor: pointer;
+    }
+
+    .main-item {
+        display: none;
+    }
     
+    .navbar__menu {
+        display: none;
+    }
+    
+    .navbar__menu img {
+        width: 65px;
+        height: 36px;
+    }
+
+    /* 
+        activated nav menu:
+        elements set to visible, apply flex column style;
+    */
+    .navbar__menu.active {
+        display: flex;
+        flex-direction: column;
+        background-color: #444;
+        right: 20px;
+        width: 200px;
+        padding: 10px;
+    }
+
+    /* about */
+    .about {
+        display: block;
+        text-align: center;
+    }
+
+    .about__icon {
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 760px) {
@@ -439,12 +511,6 @@ header {
         font-size: 23px;
     }
 
-    /* about */
-    .about {
-        display: block;
-        text-align: center;
-    }
-
     .about__icon {
         margin-bottom: 2rem;
     }
@@ -456,17 +522,18 @@ header {
     }
 
     .project__item {
-        width: 15rem;
-        height: 11rem;
+        width: 17rem;
+        height: 13rem;
+        margin-right: 2rem;
     }
 
     .project__item h1, .project__item p {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .project__item p {
         margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
     }
 
     /* education */
@@ -504,6 +571,11 @@ header {
         margin-top: 1rem;
     }
 
+    /* return top */
+    .return-top {
+        font-size: 3.5rem;
+    }
+
     /* footer */
     footer a {
         font-size: 2rem;
@@ -519,10 +591,19 @@ header {
         font-size: 20px;
     }
 
+    /* navbar */
+    .navbar__list {
+        font-size: 1.7rem;
+    }
+
     /* projects */
     .project__item {
-        width: 12rem;
-        height: 7rem;
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .project__item h1, .project__item p {
+        font-size: 1rem;
     }
 
     /* learning */
@@ -546,6 +627,16 @@ header {
     .card__paragraph {
         margin-left: initial;
     }
+
+    /* cv */
+    .curriculum__lang-select {
+        font-size: 1rem;
+    }
+
+    /* return top */
+    .return-top {
+        font-size: 3.5rem;
+    }
 }
 
 @media (max-width: 440px) {
@@ -557,15 +648,28 @@ header {
         font-size: 18px;
     }
 
+    /* navbar */
+    .navbar__name {
+        font-size: 1.1rem;
+    }
+
+    .navbar__list {
+        font-size: 1.3rem;
+    }
+
     /* projects */
+    .projects__carousel {
+        width: 12rem;
+    }
+
     .project__item {
-        width: 9rem;
-        height: 6rem;
+        width: 5rem;
+        height: 15rem;
         margin-right: 1rem;
     }
 
     .project__item h1, .project__item p {
-        font-size: 0.3rem;
+        font-size: 0.9rem;
     }
 
     .project__item p {
@@ -594,13 +698,29 @@ header {
         font-size: 0.9rem;
     }
 
+    /* return top */
+    .return-top {
+        font-size: 3.5rem;
+    }
+
+    /* footer */
     footer a {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 299px) {
     #screen-message {
-        display: initial;
+        display: block;
+    }
+
+    /* navbar */
+    .wraps {
+        white-space: initial;
+    }
+
+    .navbar__list {
+        display: flex;
+        flex-direction: column;
     }
 }

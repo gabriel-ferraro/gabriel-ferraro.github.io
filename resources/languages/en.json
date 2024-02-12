@@ -1,5 +1,6 @@
 {
-    "#conctact-me": "Contact me",
+    "#°conctact-me": "Contact me",
+    "#screen-message": "This portfolio can be better visualized in a device with a width larger than 300px.",
     "#about-presentation": "Hi, <b>i'm Gabriel Ferraro Severino</b>",
     "#about-text": "A fullstack developer, software engineer and continuous learner. Currently through new discoveries, I aim to develop smart and efficient solutions. Want to know a little more about me? check my <a class='main-link' href='https://www.linkedin.com/in/gabriel-severino/' target='_blank'>LinkedIn</a> and contact me.",
     "#projects-title": "My projects",

@@ -1,8 +1,9 @@
 /**
- * Toggles navbar menu and show hidden items for responsivity.
+ * Toggles menu-items style for responsivity.
  */
 function toggleMenu() {
-    document.querySelector("#sidenav").classList.toggle("active");
+    // Switch style for setting sidenav properties in smaller screens.
+    document.getElementById("navbar-menu").classList.toggle("active");
 }
 
 /**
@@ -42,8 +43,8 @@ async function changeLang(lang) {
  */
 async function loadCV() {
     // Get the canvas and select properties.
-    const selectedLang = document.querySelector("#cv-lang-select").value;
-    const canvas = document.querySelector("#pdf-renderer");
+    const selectedLang = document.getElementById("cv-lang-select").value;
+    const canvas = document.getElementById("pdf-renderer");
     const canvasContext = canvas.getContext('2d');
     // If no lang was selected, clear canvas.
     if (!selectedLang) {
@@ -51,8 +52,8 @@ async function loadCV() {
         canvas.height = 0;
         canvas.width = 0;
         // Hide download icon and canvas.
-        document.querySelector("#download-cv").style.visibility = "hidden";
-        document.querySelector("#canvas_container").style.display = "none";
+        document.getElementById("download-cv").style.visibility = "hidden";
+        document.getElementById("canvas_container").style.display = "none";
         return;
     }
 
@@ -68,9 +69,9 @@ async function loadCV() {
             page.render({ canvasContext, viewport });
         });
         // Makes download cv icon and canvas visible, sets anchor href value to download the correct cv.
-        document.querySelector("#canvas_container").style.display = "initial";
-        document.querySelector("#download-cv").style.visibility = "visible";
-        document.querySelector("#download-cv-anchor").href = cvLocation;
+        document.getElementById("canvas_container").style.display = "initial";
+        document.getElementById("download-cv").style.visibility = "visible";
+        document.getElementById("download-cv-anchor").href = cvLocation;
     }, error => console.error(error));
 }
 
@@ -130,7 +131,7 @@ async function renderProject(projectId) {
     // because async functions wrap the return value into a Promise, so to get the expected boolean, resolving it is necessary.
     const projectLoaded = await setSnippet(("./resources/snippets/" + projectId + ".html"), "#selected-project");
     // If project resource loaded succesfully, scroll view to projects section.
-    if (projectLoaded) document.querySelector("#projects").scrollIntoView({ block: "end", behavior: 'smooth' });
+    if (projectLoaded) document.getElementById("projects").scrollIntoView({ block: "end", behavior: 'smooth' });
 }
 
 // On page load.
@@ -147,5 +148,5 @@ window.addEventListener("load", () => {
     controlCarousel("#projects-carousel");
 
     // Setting the default language of lang selector for CV to the template option: none.
-    document.querySelector("#cv-lang-select").value = "";
+    document.getElementById("cv-lang-select").value = "";
 });

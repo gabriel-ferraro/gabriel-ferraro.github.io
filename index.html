@@ -30,25 +30,44 @@
         <nav class="navbar">
             <ul class="navbar__list">
                 <li class="navbar__item">
-                    <a href="#" class="navbar__link normal-link nowrap">Gabriel Ferraro Severino</a>
+                    <a href="#" class="navbar__link normal-link nowrap wraps navbar__name">Gabriel Ferraro Severino</a>
                 </li>
                 <div class="navbar__item-right">
-                    <li class="navbar__item">
-                        <a href="#footer" id="conctact-me" class="navbar__link normal-link nowrap">Contact me</a>
+                    <li class="navbar__item main-item">
+                        <a href="#footer" id="°conctact-me" class="navbar__link normal-link">Contact me</a>
                     </li>
-                    <li id="english-mode" onclick="changeLang('en')" class="navbar__item tooltip">
+                    <li id="english-mode" onclick="changeLang('en')" class="navbar__item main-item tooltip">
                         <img class="uk-flag" src="./resources/imgs/uk-flag.png" alt="Flag of the United Kindom">
                         <span class="tooltip__text nowrap">Change to english</span>
                     </li>
-                    <li id="pt-BR-mode" onclick="changeLang('pt-BR')" class="navbar__item tooltip">
+                    <li id="pt-BR-mode" onclick="changeLang('pt-BR')" class="navbar__item main-item tooltip">
                         <img class="br-flag" src="./resources/imgs/brazil-flag.png" alt="Flag of Brazil">
                         <span class="tooltip__text nowrap">Mudar para pt-BR</span>
                     </li>
+                    <li class="navbar__item sidenav-icon">
+                        <a onclick="toggleMenu()" class="normal-link">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                </div>
+                <!-- navbar menu for smaller screens -->
+                <div id="navbar-menu" class="navbar__menu">
+                    <a href="#footer" id="°conctact-me" class="navbar__menu__item navbar__link normal-link">Contact me</a>
+                    <div onclick="changeLang('en')" class="navbar__menu__item">
+                        <img id="english-mode" class="uk-flag" src="./resources/imgs/uk-flag.png" alt="Flag of the United Kindom">
+                        <p class="">Change to english</p>
+                    </div>
+                    </li>
+                    <div id="pt-BR-mode" onclick="changeLang('pt-BR')" class="navbar__menu__item">
+                        <img class="br-flag" src="./resources/imgs/brazil-flag.png" alt="Flag of Brazil">
+                        <p class="">Mudar para pt-BR</p>
+                    </div>
                 </div>
             </ul>
         </nav>
     </header>
 
+    <!-- device screen size message -->
     <h1 id="screen-message">This portfolio can be better visualized in a device with a width larger than 300px.</h1>
 
     <!-- about me -->
