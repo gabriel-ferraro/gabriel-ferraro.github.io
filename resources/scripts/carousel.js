@@ -6,32 +6,26 @@
 function controlCarousel(carouselId) {
     // Aquire carousel element.
     const carouselContainer = document.querySelector(carouselId);
-    //
+    // boolean to control dragging state.
     let isDragging = false;
+    // Initial horizontal position of the mouse relative to the carousel.
     let startX;
+    // Current horizontal scroll position of the carousel.
     let scrollLeft;
 
-    // If mouse clicks on carousel.
+    // If mouse clicks on carousel - tracks how far the mouse has moved horizontally within the carousel during dragging.
     carouselContainer.addEventListener('mousedown', (e) => {
         isDragging = true;
-        //
+        /**
+         * e.pageX is the horizontal coordinate of the mouse pointer relative to the whole document;
+         * carouselContainer.offsetLeft - gives the horizontal distance between the left edge of the carousel element 
+         * and its offset parent (typically its nearest positioned ancestor element);
+         */
         startX = e.pageX - carouselContainer.offsetLeft;
         scrollLeft = carouselContainer.scrollLeft;
         carouselContainer.style.cursor = 'grabbing';
     });
-    // If mouse "unclicks".
-    carouselContainer.addEventListener('mouseup', () => {
-        isDragging = false;
-        carouselContainer.style.cursor = 'grab';
-    });
-    // If mouse leaves carousel - user won't be able to grab and keep grabbing if mouse leaves carousel.
-    carouselContainer.addEventListener('mouseleave', () => {
-        if (isDragging) {
-            isDragging = false;
-            carouselContainer.style.cursor = 'grab';
-        }
-    });
-    // If user click and drag mouse .
+    // If user click and drag mouse in carousel. 
     carouselContainer.addEventListener('mousemove', (e) => {
         //
         if (!isDragging) return;
@@ -41,11 +35,27 @@ function controlCarousel(carouselId) {
         const walk = (x - startX) * 3;
         carouselContainer.scrollLeft = scrollLeft - walk;
     });
-    // controls mouse scroll movement in carousel.
+    // If mouse "unclicks" set to not grabbing and change mouse icon.
+    carouselContainer.addEventListener('mouseup', () => {
+        isDragging = false;
+        carouselContainer.style.cursor = 'grab';
+    });
+    // If mouse leaves carousel - set to not grabbing, user won't be able to grab and keep grabbing if mouse leaves carousel.
+    carouselContainer.addEventListener('mouseleave', () => {
+        if (isDragging) {
+            isDragging = false;
+            carouselContainer.style.cursor = 'grab';
+        }
+    });
+    // controls mouse wheel scroll movement in carousel.
     carouselContainer.addEventListener('wheel', (event) => {
+        // Prevents scrolling vertically when mouse pointer in on carousel.
         event.preventDefault();
-        // 
-        carouselContainer.scrollLeft += event.deltaY * 6;
+        /**
+         * event.deltaY - is the vertical coordinate of the mouse pointer relative to the document,
+         * multiplying by some value determines how fast it will traverse the carousel.
+         */
+        carouselContainer.scrollLeft += event.deltaY * 4;
     });
 }
 

@@ -130,7 +130,7 @@ async function renderProject(projectId) {
     // setSnippet loads the resource (project) at the location selected-project if successful, and returns a Promise<boolean>,
     // because async functions wrap the return value into a Promise, so to get the expected boolean, resolving it is necessary.
     const projectLoaded = await setSnippet(("./resources/snippets/" + projectId + ".html"), "#selected-project");
-    // If project resource loaded succesfully, scroll view to projects section.
+    // If project resource loaded succesfully, scroll view to end of projects section.
     if (projectLoaded) document.getElementById("projects").scrollIntoView({ block: "end", behavior: 'smooth' });
 }
 

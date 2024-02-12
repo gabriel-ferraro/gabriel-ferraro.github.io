@@ -518,17 +518,17 @@ header {
     /* projects */
     .projects__title {
         text-align: center;
-        margin: 0;
+        margin: 0 auto;
     }
 
     .project__item {
-        width: 17rem;
+        width: 12rem;
         height: 13rem;
         margin-right: 2rem;
     }
 
     .project__item h1, .project__item p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .project__item p {
@@ -597,8 +597,12 @@ header {
     }
 
     /* projects */
+    .projects {
+        padding: 2rem;
+    }
+
     .project__item {
-        width: 15rem;
+        width: 10rem;
         height: 10rem;
     }
 
@@ -658,18 +662,13 @@ header {
     }
 
     /* projects */
-    .projects__carousel {
-        width: 12rem;
+    .projects {
+        padding: 2rem;
     }
 
     .project__item {
-        width: 5rem;
-        height: 15rem;
+        width: 9rem;
         margin-right: 1rem;
-    }
-
-    .project__item h1, .project__item p {
-        font-size: 0.9rem;
     }
 
     .project__item p {
