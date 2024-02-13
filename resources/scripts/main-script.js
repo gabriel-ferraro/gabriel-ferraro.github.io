@@ -2,7 +2,6 @@
  * Toggles navbar menu style for responsivity.
  * If navbar menu is activated and user clicks outside the navbar or outside return top, toggles the style.
  */
-
 function toggleMenu() {
     const navmenu = document.getElementById("navbar-menu");
     // Named function for the event listener. Closes navbar after it's activated.
@@ -21,6 +20,33 @@ function toggleMenu() {
 }
 
 /**
+ * Returns the value for the search param indicated in the argument paramName.
+ * @param {String} paramName Name of the desired URL search param.
+ * @returns {String | null} Value of the URL search param (null if it doesn't exist).
+ */
+function getQueryParamValue(paramName) {
+    return new URLSearchParams(window.location.search).get(paramName);
+}
+
+/**
+ * Updates or creates a query param with a value and sets it in browser URL.
+ * @param {String} queryParamKey query param key.
+ * @param {String} paramValue value for the query param.
+ */
+function setQueryParamValue(queryParamKey, paramValue) {
+    const queryParams = new URLSearchParams(window.location.search);
+    const aquiredParam = queryParams.get(queryParamKey);
+    // If the aquiredParam exists and the query param value in URL is the same as the one recieved as arg, returns.
+    if (aquiredParam && paramValue.toLocaleLowerCase() == aquiredParam.toLocaleLowerCase()) return;
+
+    // Set the value in the param, then set the updated new URL pathname.
+    // If page loaded without the URL query param, the set below creates it and sets the value, else updates.
+    queryParams.set(queryParamKey, paramValue);
+    const newUrl = window.location.pathname + '?' + queryParams.toString();
+    window.history.replaceState({}, '', newUrl);
+}
+
+/**
  * Changes the page language between en and pt-BR.
  * @param {String} lang the selected language.
  */
@@ -35,7 +61,7 @@ async function changeLang(lang) {
 
     // Update current lang in doc and set lang URL param.
     document.documentElement.lang = lang;
-    setSearchParamLangValue(lang);
+    setQueryParamValue("lang", lang);
     const json = await response.json();
     // For each json key-value, set the element innerHTML as the respective value.
     Object.keys(json).forEach(key => {
@@ -110,57 +136,46 @@ async function setSnippet(request, location) {
 }
 
 /**
- * Returns the value for the search param indicated in the argument paramName.
- * @param {String} paramName Name of the desired URL search param.
- * @returns {String | null} Value of the URL search param (null if it doesn't exist).
- */
-function getSearchParamValue(paramName) {
-    return new URLSearchParams(window.location.search).get(paramName);
-}
-
-/**
- * Changes the lang URL param value to the lang in argument.
- * @param {String} newValue new lang value.
- * @returns If the language in lang URL param is the same as the one selected, returns.
- */
-function setSearchParamLangValue(newValue) {
-    const langParam = new URLSearchParams(window.location.search);
-    const aquiredLangParam = langParam.get("lang");
-    // If the language in URL param is the same as the one selected, returns.
-    if (aquiredLangParam && newValue.toLocaleLowerCase() == aquiredLangParam.toLocaleLowerCase()) return;
-
-    // Set the lang value in the param, then set the updated newUrl pathname.
-    // If page loaded without a URL param for lang, the set below creates it and sets the value.
-    langParam.set("lang", newValue);
-    const newUrl = window.location.pathname + '?' + langParam.toString();
-    window.history.replaceState({}, '', newUrl);
-}
-
-/**
  * Recieves a project element id as argument, moves HTML viewport to project section.
  * @param {String} projectId id of project element.
  */
 async function renderProject(projectId) {
     // setSnippet loads the resource (project) at the location selected-project if successful, and returns a Promise<boolean>,
     // because async functions wrap the return value into a Promise, so to get the expected boolean, resolving it is necessary.
-    const projectLoaded = await setSnippet(("./resources/snippets/" + projectId + ".html"), "#selected-project");
+    const projectLoaded = await setSnippet(("./resources/snippets/" + projectId + ".html"), "#selected-project-div");
     // If project resource loaded succesfully, scroll view to end of projects section.
-    if (projectLoaded) document.getElementById("projects").scrollIntoView({ block: "end", behavior: 'smooth' });
+    if (projectLoaded) document.getElementById("selected-project-div").scrollIntoView({ block: "start", behavior: 'smooth' });
+}
+
+/**
+ * Removes content from currently selected-project section, making it empty in HTML.
+ */
+function closeProject() {
+    document.getElementById("selected-project-div").innerHTML = "";
+}
+
+/**
+ * Updates the URL depending on projectId arg, copy the updated URL link to user's clipboard.
+ * @param {String} projectId Id of the selected project to become value for project URL query param.
+ */
+function shareWithProjectParam(projectId) {
+    setQueryParamValue("project", projectId);
+    window.navigator.clipboard.writeText(window.location.toString());
 }
 
 // On page load.
 window.addEventListener("load", () => {
     // Define doc language by the lang URL search param.
-    const langParam = getSearchParamValue("lang");
+    const langParam = getQueryParamValue("lang");
     if (langParam) changeLang(langParam);
 
     // Get URL param, if exists, load project and scroll the view for it's HTML section.
-    const projectParam = getSearchParamValue("project");
+    const projectParam = getQueryParamValue("project");
     if (projectParam) renderProject(projectParam);
 
     // Generate projects carousel behaviour.
     controlCarousel("#projects-carousel");
 
     // Setting the default language of lang selector for CV to the template option: none.
-    document.getElementById("cv-lang-select").value = "";
+    document.getElementById("cv-lang-select").value = "";    
 });

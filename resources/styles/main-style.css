@@ -61,6 +61,7 @@ p {
 
 .main-link {
     color: #00dddd;
+    text-decoration: underline;
 }
 
 .main-link:hover {
@@ -230,10 +231,6 @@ header {
     background-color: rgba(80, 80, 80, 0.8);
 }
 
-.projects__selected {
-    text-align: center;
-}
-
 /* projects background imgs */
 .background-image-template {
     background-repeat: no-repeat;
@@ -247,7 +244,7 @@ header {
 }
 
 #personni-moveis {
-    background-image: url(../imgs/uk-flag.png);
+    background-image: url(../imgs/personni-moveis-front-page.png);
 }
 
 #gotrip {

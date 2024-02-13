@@ -1,0 +1,77 @@
+/* selected-project */
+.close-project {
+    margin: 0 30px 0 auto;
+    display: block;
+    height: 50px;
+    width: 50px;  
+    cursor: pointer;
+    border-radius: 1px;
+    background-color: #c9c9c9;
+}
+
+.close-project:hover {
+    background-color: #aaaaaa;
+}
+
+.x-icon {
+    color: red;
+    font-size: 25px;
+}
+
+.selected-project h1 {
+    padding-bottom: 30px;
+}
+
+.selected-project .selected-project__link, 
+.selected-project .selected-project__share-button, 
+.selected-project img, 
+.selected-project h1, 
+.selected-project ul {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.selected-project p {
+    text-align: justify;
+    padding: 2rem;
+}
+
+.selected-project__img {
+    width: 80%;
+}
+
+.selected-project__share-button {
+    max-width: 50%;
+    background-color: #5F6366;
+    color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.selected-project__share-button:hover {
+    background-color: #7a7a7a;
+}
+
+.selected-project__share-button i {
+    margin-bottom: 15px;
+    font-size: 3.5rem;
+    max-width: 50%;
+}
+
+.selected-project__link {
+    padding-bottom: 25px;
+    width: fit-content;
+    font-size: 1.5rem;
+}
+
+.selected-project__ul-title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.selected-project__ul {
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+}

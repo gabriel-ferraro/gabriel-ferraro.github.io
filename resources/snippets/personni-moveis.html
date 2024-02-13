@@ -1,1 +1,75 @@
-<h1>Em construção</h1>
+<button onclick="closeProject()" class="close-project">
+    <i class="fa-solid fa-x x-icon"></i>
+</button>
+
+<div>
+    <h1 class="selected-project__title">Personni Móveis</h1>
+</div>
+
+<img class="selected-project__img" src="./resources/imgs/personni-moveis-front-page.png" alt="personni-moveis project homepage">
+
+<p id="personni-moveis-p1" class="selected-project__p">
+    This was my final university project. The main idea was to create a web based platform for furniture e-commerces that would offer a 
+    new and dynamic manner of selling. The solution is aimed at medium and small enterprises wich don't have a well established e-commerce, but could be adopted by any kind of furniture
+    related business. The objective was reached and some new features for customization were added.
+</p>
+<p id="personni-moveis-p2" class="selected-project__p">
+    The main focus of the project, offereing a different sale strategy integrated in the e-commerce, gives site admins or business managers the tools to specify models for a kind
+    of furniture, having all characteristics that the customer could desire, such as exchanging for a different part of a furniture, different materials, composition, and other 
+    characteristics, everything can be handled by administrators, as much for the limits present in the furniture, giving the hability to maintain the limits and production capacity of the
+    store. After administrators specify the furniture model and options, the store clients are able to follow a modeling journey, through iterative steps, selecting the disired 
+    characteristics off a chair, for example, the client can see the value of the product modeled, if conforming to it's expectations, the client would next purchase of the product.
+</p>
+<p class="personni-moveis-p3">
+    Besides this different buying journey, standard selleing chacracteristics existing in e-commerces were added, such as the sale of standart non customizable produtos and 
+    personalized furniture, wich enolve making few customizations in a fixed, standard furniture piece.
+
+    Additional features added where:
+</p>
+
+<ul class="selected-project__ul">
+    <li id="personni-feature-1">Store and page customization - admins can change color, template images and styles through admin interface</li>
+    <li id="personni-feature-2">
+        Use of Brazilian payment API 
+        <a class="main-link" href="https://sejaefi.com.br/central-de-ajuda/api/oferecer-pagamento-online-em-site#conteudo">
+            (Gerencianet)
+        </a>
+        offered PIX sales.
+    </li>
+    <li id="personni-feature-3">Support for different access profiles:</li>
+    <ul class="selected-project__ul">
+        <li id="personni-role-1">Admin - everything authorized</li>
+        <li id="personni-role-2">Colaborator - limited authorization</li>
+        <li id="personni-role-3">User - Authorized to see own info, buy products, etc...</li>
+    </ul>
+</ul>
+
+<p class="personni-moveis-p4">
+    Due to an agreement with the 5 members of this project, only the API code is now open-software, while the front-end is kept in a private repository.
+    Sensitive data such as API access tokens, hints and internal comments where removed from versioning history before making the API repository public.
+</p>
+
+<h3 class="selected-project__ul-title">Back-end:</h3>
+<ul class="selected-project__ul">
+    <li id="personni-back-tech-1">Java Spring-boot rest API</li>
+    <li id="personni-back-tech-2">Docker</li>
+    <li id="personni-back-tech-3">Java mail sender with gmail</li>
+    <li id="personni-back-tech-4">JWT validation for access and privileges (with spring security)</li>
+    <li id="personni-back-tech-5">Gerencia net API</li>
+    <li>Address API for Brazilian CEP (zip code)</li>
+</ul>
+<h3 class="selected-project__ul-title">Front-end</h3>
+<ul class="selected-project__ul">
+    <li id="personni-front-tech-1">Vue Js</li>
+    <li id="personni-front-tech-2">Element plus components-library</li>
+    <li id="personni-front-tech-3">google-maps API for store localization</li>
+</ul>
+
+<a id="°seeGithub" class="selected-project__link main-link" href="https://github.com/gabriel-ferraro/PersonniMoveisBack" target="_blank">
+    See this project in github
+</a>
+
+<button id="°copyClipboard" class="selected-project__share-button" onclick="shareWithProjectParam('personni-moveis')">
+    <p class="click-to-share-project">Click to share this portfolio/project link!</p>
+    <i class="fas fa-clipboard-list"></i>
+</button>
