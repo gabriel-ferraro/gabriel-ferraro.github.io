@@ -1,0 +1,16 @@
+{
+    "#personni-moveis-p1": "Este projeto foi meu TCC. A idéia principal era uma plataforma web para e-commerces de móveis que oferece uma forma de venda nova e dinâmica. A solução é voltada para empresas de pequeno e médio porte que não tem um e-comerce bem estabelecido, mas poderia ser adotada por qualquer tipo de empresa relacionada a venda de móveis. O objetivo foi alcançado e algumas novas funcionalidades para personalização foram adicionadas",
+    "#personni-moveis-p2": "O foco principal do projeto, oferecer uma estratégia de vendas diferenciada, integrada ao e-commerce, entrega aos administradores ou gerenciadores do site as ferramentas para especificar modelos para um tipo de móvel, tendo todas as caracteristicas que o cliente pode desejar, como mudar uma parte específica de um móvel, um material diferente, composição, e outras características, tudo pode ser gerenciado pelo administradores, assim como os limites presentes no móvel, entregando a habilidade de manter os limites da capacidade de produção da fábrica da loja. Depois que administradores especificam o modelo e opções do móvel, os clientes podem seguir uma jornada de modelagem, por meio de passos iterativos, selecionando as características desejadas de uma cadeira, por exemplo, o cliente pode ver o valor do produto modelado, se estiver conforme suas espectativas, o cliente pode então comprar o produto.",
+    "#personni-moveis-p3": "Além da jornada de compra diferenciada, métodos convencionais de venda existentes em e-commerces foram adicionados, como a venda de móveis padrão não modificáveis e a venda de móveis personalizáveis, que envolvem a inserção de algumas opções adicionais em um móvel fixo, padrão. As funcionalidades adicionais inseridas foram:",
+    "#personni-feature-1": "Personalização da página e loja - administradores podem mudar cor, template de imagens e estilos pela interface de admin",
+    "#personni-feature-2": "Uso da API de pagamentos brasileira <a class='main-link' href='https://sejaefi.com.br/central-de-ajuda/api/oferecer-pagamento-online-em-site#conteudo'>(Gerencianet)</a>",
+    "#personni-feature-3": "Suporte para diferentes perfis de acesso:",
+    "#personni-role-1": "Admin - tudo autorizado",
+    "#personni-role-2": "Colaborator - acesso limitado",
+    "#personni-role-3": "User - Autorizado a ver a própria iformação, comprar produtos, etc...",
+    "#personni-moveis-p4": "Devido a um acordo com os 5 membros deste projeto, apenas o código da API agora é software aberto, enquanto o front-end é mantido em um repositório privado. Dados confidenciais, como tokens de acesso à API, dicas e comentários internos, foram removidos do histórico de controle de versão antes de tornar público o repositório da API.",
+    "#personni-back-tech-3": "Java mail sender com gmail",
+    "#personni-back-tech-4": "Validação JWT para acesso e privilégio (com spring security)",
+    "#personni-back-tech-6": "API de endereços com CEP",
+    "#personni-front-tech-3": "Google-maps API for store localization"
+}
