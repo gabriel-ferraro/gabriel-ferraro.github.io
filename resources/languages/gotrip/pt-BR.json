@@ -1,0 +1,5 @@
+{
+    "#gotrip-p1": "Projeto para simulação de um sistema de venda de passagens aéreas; As interfaces foram fortemente influcenciadas pelo site brasileiro da <a class='main-link' href='https://123milhas.com/' target='_blank'>123Milhas</a>",
+    "#gotrip-p2": "Esse projeto envolveu autenticação de usuários, permissões e funcionalidades de venda fake, desenvolvido em Node.js e MongoDB",
+    "#gotrip-front-tech-2": "Biblioteca de componentes Angular Material."
+}

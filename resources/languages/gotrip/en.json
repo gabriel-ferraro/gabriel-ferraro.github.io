@@ -1,0 +1,5 @@
+{
+    "#gotrip-p1": "Project for simulating an airline ticket system; Interfaces where heavily based on brazilian site of <a class='main-link' href='https://123milhas.com/' target='_blank'>123Milhas</a>",
+    "#gotrip-p2": "This project envolved user authentication, permissions access and fake selling features, developed in Node.js with MongoDB.",
+    "#gotrip-front-tech-2": "Angular Material components-library."
+}
