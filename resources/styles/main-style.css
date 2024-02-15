@@ -271,10 +271,6 @@ header {
     background-image: url(../imgs/graph-proUni.png);
 }
 
-#yt-dlp-GUI {
-    background-image: url(../imgs/not-available.jfif);
-}
-
 /* education */
 .education__title {
     font-size: 2rem;
