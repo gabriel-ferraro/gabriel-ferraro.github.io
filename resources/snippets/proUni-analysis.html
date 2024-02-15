@@ -1,1 +1,41 @@
-<h1>Em construção</h1>
+<span id="proUni-analysis" style="visibility: hidden;"></span>
+<button onclick="closeProject()" class="close-project">
+    <i class="fa-solid fa-x x-icon"></i>
+</button>
+
+<div>
+    <h1 id="proUni-title" class="selected-project__title">Data Analysis in ProUni 2018</h1>
+</div>
+
+<img class="selected-project__img" src="./resources/imgs/graph-proUni.png" alt="Screenshot of a graphic from my ProUni Analysis">
+
+<p id="proUni-p1" class="selected-project__p">
+    This project analysed possible correlations in data at <a class="main-link" href="https://pt.wikipedia.org/wiki/Programa_Universidade_para_Todos" target='_blank'>ProUni</a> 2018 DataSet. 
+    To perform an analysis on a visual manner, different graphs were constructed using python libraries, majorly correlating students grades and scolarships types:
+</p>
+
+<h3 id="scolarship-title" class="selected-project__ul-title">Scolarships:</h3>
+<ul class="selected-project__ul">
+    <li id="scholarship-type-1">Full scholarship quotas</li>
+    <li id="scholarship-type-2">Full open scholarship</li>
+    <li id="scholarship-type-3">Partial scholarship quotas</li>
+    <li id="scholarship-type-4">Partial open scholarship</li>
+</ul>
+
+<h3 id="libraries" class="selected-project__ul-title">Libraries:</h3>
+<ul class="selected-project__ul">
+    <li>Pandas</li>
+    <li>Numpy</li>
+    <li>Matplotlib</li>
+    <li>plotly</li>
+    <li>Seaborn</li>
+</ul>
+
+<a id="°seeGithub" class="selected-project__link main-link" href="https://colab.research.google.com/drive/1GMVCJXKJQolesHPUpeaa86tNdj8b5agS?usp=sharing" target="_blank">
+    Google colab Link
+</a>
+
+<button onclick="shareWithProjectParam('proUni-analysis')" id="°copyClipboard" class="selected-project__share-button">
+    <p class="click-to-share-project">Share this as link</p>
+    <i class="fas fa-clipboard-list"></i>
+</button>
