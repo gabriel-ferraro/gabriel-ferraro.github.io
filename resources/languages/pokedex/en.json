@@ -1,0 +1,7 @@
+{
+    "#pokedex-p1": "Pokedex project made with Kotlin, executable as an Android APK. This project consumes the <a class='main-link' href='https://pokeapi.co/' target='blank'>Poké API</a> for fetching pokemon info.",
+    "#pokedex-p2": "Poké API is a RESTful API containing rich information about Pokemons from various pokemon generations, including pokemon status, images, and habilities, collected from different games of Pokemon series. This project gathered some of the main informations of the pokemons, forming a simple Pokedex, where its possible to search pokemons by name and click to see pokemon data.",
+    "#pokedex-lib-1": "Http Client <a class='main-link' href='https://github.com/square/retrofit' target='blank'>retrofit",
+    "#pokedex-lib-2": "Deserialization with <a class='main-link' href='https://github.com/google/gson' target='blank'>GSON</a>",
+    "#pokedex-lib-3": "Image rendering with <a class='main-link' href='https://github.com/square/picasso' target='blank'>Picasso</a>"
+}

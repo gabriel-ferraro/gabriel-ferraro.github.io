@@ -1,1 +1,35 @@
-<h1>Em construção</h1>
+<span id="pokedex" style="visibility: hidden;"></span>
+<button onclick="closeProject()" class="close-project">
+    <i class="fa-solid fa-x x-icon"></i>
+</button>
+
+<div>
+    <h1 class="selected-project__title">Pokedex</h1>
+</div>
+
+<img class="selected-project__img" src="./resources/imgs/pokedex-pokemon.jpeg" alt="My Pokedex on pokemon visualization screen">
+
+<p id="pokedex-p1" class="selected-project__p">
+    Pokedex project made with Kotlin, executable as an Android APK. This project consumes the <a class="main-link" href="https://pokeapi.co/" target='blank'>Poké API</a> for fetching pokemon info.
+</p>
+<p id="pokedex-p2" class="selected-project__p">
+    Poké API is a RESTful API containing rich information about Pokemons from various pokemon generations, including pokemon status, images, and habilities
+    from different games of Pokemon series. This project gathered some of the main informations of the pokemons, forming a simple Pokedex, where its possible 
+    to search pokemons by name and click to see pokemon data.
+</p>
+
+<h3 id="libraries" class="selected-project__ul-title">Libraries:</h3>
+<ul class="selected-project__ul">
+    <li id="pokedex-lib-1">Http Client <a class="main-link" href="https://github.com/square/retrofit" target="_blank">retrofit</a></li>
+    <li id="pokedex-lib-2">Deserialization with <a class="main-link" href="https://github.com/google/gson" target="_blank">GSON</a></li>
+    <li id="pokedex-lib-3">Image rendering with <a class="main-link" href="https://github.com/square/picasso" target="_blank">Picasso</a></li>
+</ul>
+
+<a id="°seeGithub" class="selected-project__link main-link" href="https://github.com/gabriel-ferraro/PokeDex" target="_blank">
+    Github Link
+</a>
+
+<button onclick="shareWithProjectParam('pokedex')" id="°copyClipboard" class="selected-project__share-button">
+    <p class="click-to-share-project">Share this as link</p>
+    <i class="fas fa-clipboard-list"></i>
+</button>

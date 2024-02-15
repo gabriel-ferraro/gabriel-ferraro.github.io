@@ -38,7 +38,10 @@
 }
 
 .selected-project__img {
-    width: 80%;
+    width: 60%;
+    height: 500px;
+    object-fit: scale-down;
+    object-position: top;
 }
 
 .selected-project__share-button {
