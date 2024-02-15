@@ -1,10 +1,10 @@
 {
     "#proUni-title": "Data Analysis in ProUni 2018",
     "#proUni-p1": "This project analysed possible correlations in data at <a class='main-link' href='https://pt.wikipedia.org/wiki/Programa_Universidade_para_Todos' target='_blank'>ProUni</a> 2018 DataSet. To perform an analysis on a visual manner, different graphs were constructed using python libraries, majorly correlating students grades and scolarships types:",
-    "#scolarship-title": "scolarships:",
-    "#scholarship-type-1": "Full scholarship quotas",
-    "#scholarship-type-2": "Full open scholarship",
-    "#scholarship-type-3": "Partial scholarship quotas",
-    "#scholarship-type-4": "Partial open scholarship",
+    "#scolarship-title": "Scolarships:",
+    "#scholarship-type-1": "Full scholarship quotas;",
+    "#scholarship-type-2": "Full open scholarship;",
+    "#scholarship-type-3": "Partial scholarship quotas;",
+    "#scholarship-type-4": "Partial open scholarship.",
     "#libraries": "Libraries:"
 }

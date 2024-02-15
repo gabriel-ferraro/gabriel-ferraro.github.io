@@ -1,5 +1,5 @@
 {
     "#observer-title": "Observer Pattern implementation in a fake supermarket stock control",
     "#observer-p1": "Adhering to the <a class='main-link' href='https://en.wikipedia.org/wiki/Design_Patterns' target='_blank'>GOF</a> pattern guidelines, this project exemplifies an Observer-Listener dynamic model within the context of a supermarket system. It represents real-time updates of product values across various listeners, such as a server for barcode scanner devices and cashiers that listen for a central server observer change on the existing products. This project made use of Java Swing for representing product cadastration and listners screens.",
-    "#libraries": "Libraries"
+    "#libraries": "Libraries:"
 }

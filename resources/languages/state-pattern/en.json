@@ -1,4 +1,5 @@
 {
     "#state-title": "State pattern implementation in a game-like window application",
-    "#state-p1": "Trying to demonstrate the state pattern in a visual manner, this project involves a very simple Java swing application where you can notice 'the change of states' suffered by the DoomGuy character when buttons are clicked; Changing between states: normal, hurt, poisoned and dead. This application is not a game, it just illustrates the pattern and how the changes act upon a <a class='main-link' href='https://www.geeksforgeeks.org/state-design-pattern/#components-of-state-design-pattern' target='_blank'>context object</a>."
+    "#state-p1": "Trying to demonstrate the state pattern in a visual manner, this project involves a very simple Java swing application where you can notice 'the change of states' suffered by the DoomGuy character when buttons are clicked; Changing between states: normal, hurt, poisoned and dead. This application is not a game, it just illustrates the pattern and how the changes act upon a <a class='main-link' href='https://www.geeksforgeeks.org/state-design-pattern/#components-of-state-design-pattern' target='_blank'>context object</a>.",
+    "#libraries": "libraries:"
 }

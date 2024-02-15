@@ -1,4 +1,5 @@
 {
     "#state-title": "Implementação do pattern State em uma aplicação de janela semelhante a um jogo",
-    "#state-p1": "Tentando demonstrar o padrão de estado de forma visual, este projeto envolve uma aplicação Java Swing simples onde você pode observar 'a mudança de estados' sofrida pelo personagem DoomGuy quando os botões são clicados; Mudando entre os estados: normal, machucado, envenenado e morto. Esta aplicação não é um jogo, apenas ilustra o padrão e como as mudanças agem sobre um <a class='main-link' href='https://www.geeksforgeeks.org/state-design-pattern/#components-of-state-design-pattern' target='_blank'>objeto de contexto</a>."
+    "#state-p1": "Tentando demonstrar o padrão de estado de forma visual, este projeto envolve uma aplicação Java Swing simples onde você pode observar 'a mudança de estados' sofrida pelo personagem DoomGuy quando os botões são clicados; Mudando entre os estados: normal, machucado, envenenado e morto. Esta aplicação não é um jogo, apenas ilustra o padrão e como as mudanças agem sobre um <a class='main-link' href='https://www.geeksforgeeks.org/state-design-pattern/#components-of-state-design-pattern' target='_blank'>objeto de contexto</a>.",
+    "#libraries": "Bibliotecas:"
 }

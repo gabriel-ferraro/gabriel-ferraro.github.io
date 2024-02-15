@@ -1,5 +1,5 @@
 {
     "#observer-title": "Implementação do Pattern Observer em um sistema de controle de estoque fake",
     "#observer-p1": "Seguindo as diretrizes do padrão <a class='main-link' href='https://en.wikipedia.org/wiki/Design_Patterns' target='_blank'>GOF</a>, este projeto exemplifica um modelo dinâmico de Observador-Listner dentro do contexto de um sistema de supermercado. Ele representa atualizações em tempo real dos valores dos produtos entre vários listners, como um servidor para dispositivos de leitura de código de barras e caixas de supermercado que ouvem por uma mudança no observador do servidor central nos produtos existentes. Este projeto fez uso do Java Swing para representar a tela de cadastro de produtos e telas de listners.",
-    "#libraries": "Bibliotecas"
+    "#libraries": "Bibliotecas:"
 }

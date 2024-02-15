@@ -3,5 +3,6 @@
     "#pokedex-p2": "Poké API é uma API RESTful que contém um conteúdo rico de informações sobre Pokemons de várias gerações, Incluindo status dos pokemons, imagens e habilidades, coletadas dos jogos da série Pokemon. Este projeto reúne algumas das informações mais relevantes dos pokemons, formando uma pokedex simples, onde é possível procurar Pokémons por nome e clicar para ver dados de um pokemon.",
     "#pokedex-lib-1": "Cliente Http <a class='main-link' href='https://github.com/square/retrofit' target='blank'>retrofit</a>",
     "#pokedex-lib-2": "Desserialização com <a class='main-link' href='https://github.com/google/gson' target='blank'>GSON</a>",
-    "#pokedex-lib-3": "Renderização de imagens com <a class='main-link' href='https://github.com/square/picasso' target='blank'>Picasso</a>"
+    "#pokedex-lib-3": "Renderização de imagens com <a class='main-link' href='https://github.com/square/picasso' target='blank'>Picasso</a>",
+    "#libraries": "Bibliotecas:"
 }

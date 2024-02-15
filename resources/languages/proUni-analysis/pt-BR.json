@@ -2,9 +2,9 @@
     "#proUni-title": "Análise de dados no dataset do ProUni 2018",
     "#proUni-p1": "Este projeto analisou possíveis correlações nos dados do DataSet do <a class='main-link' href='https://pt.wikipedia.org/wiki/Programa_Universidade_para_Todos' target='_blank'>ProUni</a> 2018. Para realizar uma análise de forma visual, foram construídos diferentes gráficos utilizando bibliotecas Python, focando principalmente na correlação entre as notas dos alunos e os tipos de bolsas.",
     "#scolarship-title": "Tipos de bolsas:",
-    "#scholarship-type-1": "Bolsa integral de cotas",
-    "#scholarship-type-2": "Bolsa integral ampla",
-    "#scholarship-type-3": "Bolsa parcial de cotas",
-    "#scholarship-type-4": "Bolsa parcial ampla",
+    "#scholarship-type-1": "Bolsa integral de cotas;",
+    "#scholarship-type-2": "Bolsa integral ampla;",
+    "#scholarship-type-3": "Bolsa parcial de cotas;",
+    "#scholarship-type-4": "Bolsa parcial ampla.",
     "#libraries": "Bibliotecas:"
 }
